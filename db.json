@@ -1,0 +1,12 @@
+{
+    "pc": [
+        {
+            "title":"테일즈위버",
+            "category":"PC",
+            "mainURL":"http://tales.nexon.com/Home/Main",
+            "mainDev":true,
+            "info":["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)", "해상도 1280 ~ 1920px까지 반응형으로 제작"],
+            "images": ["/tw-4.jpg", "/tw-2.jpg", "/tw-3.jpg"]
+        }
+    ]
+}
