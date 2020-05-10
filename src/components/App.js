@@ -15,7 +15,7 @@ const App = () => {
   const [active, setActive] = useState({});
   const [work, setWork] = useState(false);
 
-  const img_path = '/images/thumbnail/';
+  const img_path = '/portfolio/images/thumbnail/';
   const html = document.querySelector('html');
   const body = document.querySelector('body');
 
@@ -41,7 +41,7 @@ const App = () => {
     (async function(){
 
       const fetchApiData = async (page) => {
-        const path = '/data/db.json';
+        const path = '/portfolio/data/db.json';
         const res = await fetch(path);
         const data = await res.json();
         return data[page];

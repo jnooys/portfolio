@@ -9,7 +9,7 @@ const Header = memo(() => {
         <>
             <header id="header">
                 <div className="container">
-                    <h1><a href="/">seoyoon jung</a></h1>
+                    <h1><a href="/portfolio">seoyoon jung</a></h1>
                     <nav>
                         <ul>
                             {category.map((cate, index) => 
