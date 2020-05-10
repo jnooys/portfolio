@@ -15,7 +15,7 @@ const App = () => {
   const [active, setActive] = useState({});
   const [work, setWork] = useState(false);
 
-  const img_path = 'http://rongchyo.cafe24.com/resources/images/thumbnail/';
+  const img_path = 'https://rongchyo.cafe24.com/resources/images/thumbnail/';
 
 
   const openModal = useCallback((work) => {
