@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* common */
+.btn_download .ico, .mob_func .main_func .move span{background:url("../img/mobile/spr_btn-mobile.png") no-repeat;background-size:151px auto}
+
+/* header */
+.header{height:60px}
+.header .content_wrap{padding-top:10px}
+.header h1 a, .header #logo_teamup{fill:#00A8FF}
+.header.header_login h1 a{width:42px;overflow:hidden}
+.header.header_login h1 .logotype{display:none}
+.header .util_menu li{margin:0 5px}
+
+/* layout */
+.main_wrap{width:100%}
+.main_mobile{min-width:320px}
+section{position:relative;width:100%;text-align:center}
+section .mcontent{position:relative;width:320px;margin:0 auto}
+
+/* common */
+.join_wrap  .join_input{width:300px;overflow:hidden;margin:0 auto}
+.join_wrap div input[type=text], .join_wrap div a{float:left}
+.join_wrap input[type=text]{-webkit-appearance:none;border:0 none;width:172px;height:50px;line-height:initial;border-radius:3px 0 0 3px;color:#00a8ff;padding:0 14px}
+.join_wrap input[type=text]::-webkit-input-placeholder{color:#a5a5a5;line-height:1.2}
+.join_wrap input[type=text]:-moz-placeholder,.join_wrap input[type=text]::-moz-placeholder{color:#a5a5a5}
+.join_wrap input[type=text]:-ms-input-placeholder{color:#a5a5a5}
+.join_wrap .btn_email{width:100px;height:50px;line-height:50px;font-size:16px;color:#fff;background:#00a8ff;border-radius:0 3px 3px 0}
+.join_wrap .btn_email:hover{background:#00a8ff;text-decoration:none}
+.btn_download{display:block;width:300px;height:50px;line-height:49px;border-radius:3px;box-shadow:1px 3px 10px rgba(0,0,0,0.1);font-size:16px;margin:0 auto}
+.btn_download span{display:inline-block;vertical-align:middle}
+.btn_download .ico{width:18px;height:18px;margin-right:9px}
+
+/* title */
+.mob_title{height:540px;background:url("../img/mobile/bg_mobile.jpg") 50% 0 no-repeat, url("../img/mobile/bg_gradi.jpg") 50% 0 repeat-x;background-size:auto 540px}
+.mob_title .mcontent{height:515px;color:#fff;padding-top:25px}
+.mob_title strong, .mob_title .tit_txt span{display:block}
+.mob_title .tit_txt strong{font-size:36px;font-weight:100;margin-bottom:17px}
+.mob_title .tit_txt span{line-height:1.3}
+.mob_title .join_wrap{position:absolute;left:0;bottom:27px;width:100%}
+.mob_title .join_wrap .op5{line-height:1.2}
+.mob_title .join_wrap .join_input{margin:13px auto 5px}
+.mob_title .btn_download{background:#fff;color:#00a8ff}
+.mob_title .btn_download:hover{background:#fff}
+.mob_title .btn_download .ico{background-position:-133px 0}
+.mob_title .btn_info{width:100%;font-size:0;margin-top:13px}
+.mob_title .btn_info li{display:inline-block;vertical-align:middle;line-height:1.2}
+.mob_title .btn_info li:first-of-type:after{content:"";display:inline-block;vertical-align:middle;width:1px;height:12px;background:rgba(255,255,255,0.3);margin:1px 5px 0}
+.mob_title .btn_info a{font-size:13px;color:#fff}
+
+.mob_func{padding:40px 0 12px}
+.mob_func h2 span{display:inline-block;height:30px;line-height:29px;min-width:80px;color:#fff;background:#00a8ff;border-radius:15px;font-size:13px;padding:0 5px}
+.mob_func h3{color:#00a8ff;line-height:1.2}
+.mob_func h3 span{display:block}
+.mob_func h3 .en{font-weight:bold}
+.mob_func h3+p{color:#a5a5a5;line-height:1.3;word-break:keep-all}
+.mob_func .main_func{margin-bottom:48px}
+.mob_func .main_func h2{margin-bottom:23px}
+.mob_func .main_func .roll_wrap{position:relative}
+.mob_func .main_func h3 .en{font-size:12px}
+.mob_func .main_func h3 .ko{font-size:24px}
+.mob_func .main_func .detail_func{height:436px;overflow:hidden}
+.mob_func .main_func .det_wrap{position:absolute;top:0;left:0;width:1280px;overflow:hidden}
+.mob_func .main_func .det_wrap > div{float:left;width:320px;opacity:0.1;transition:opacity 300ms linear}
+.mob_func .main_func .det_wrap > .on{opacity:1;transition-duration:0s}
+.mob_func .main_func .detail_func p{margin:13px 0 7px}
+.mob_func .main_func .detail_func .img{display:block;width:320px;height:320px;background-size:320px auto !important;margin:0 auto}
+.mob_func .main_func .groupfeed .img{background:url("../img/mobile/ko/img_func-1.png") no-repeat}
+.mob_func .main_func .messenger .img{background:url("../img/mobile/ko/img_func-2.png") no-repeat}
+.mob_func .main_func .search .img{background:url("../img/mobile/ko/img_func-3.png") no-repeat}
+.mob_func .main_func .file .img{background:url("../img/mobile/ko/img_func-4.png") no-repeat}
+.mob_func .main_func .roll_btn{position:absolute;left:0;bottom:3px;width:100%;overflow:hidden;font-size:0;z-index:1}
+.mob_func .main_func .roll_btn li{display:inline-block;width:5px;height:5px;vertical-align:top;padding:0 2px 0 3px}
+.mob_func .main_func .roll_btn a{display:block;width:100%;height:100%;border-radius:5px;text-indent:-9999px;color:transparent;background:#a5a5a5}
+.mob_func .main_func .roll_btn .on a{background:#00a8ff}
+.mob_func .main_func .move span{position:absolute;width:50px;height:50px;top:235px}
+.mob_func .main_func .move .prev{left:25px}
+.mob_func .main_func .move .next{right:25px;background-position:-55px 0}
+.mob_func .more_func{padding-left:16px}
+.mob_func .more_func h2{margin-bottom:24px}
+.mob_func .more_func h3, .mob_func .more_func p{text-align:left}
+.mob_func .more_func h3 .en{font-size:12px;margin-bottom:1px}
+.mob_func .more_func h3 .ko{font-size:18px}
+.mob_func .more_func p{margin:5px 0 25px}
+
+.mob_down{padding-bottom:34px}
+.mob_down .btn_download{background:#00a8ff;color:#fff}
+.mob_down .btn_download:hover{background:#00a8ff}
+.mob_down .btn_download .ico{background-position:-110px 0}
+
+/* footer */
+.footer{height:auto;text-align:center}
+.footer .content_wrap{padding-top:0}
+.footer .foot_menu ul{margin:0 0 2px}
+.footer .foot_menu ul li{padding:0 5px}
+.footer .foot_menu ul li:first-child{padding-left:0}
+.footer .foot_menu ul li:last-child{padding-right:0}
+.footer .foot_menu ul li a{font-size:12px}
+.footer address > span:first-child{display:none}
+.footer .logo{display:inline-block;position:static;margin:17px 0 21px}
+
+/* popup */
+.layer .layer_content{height:188px;;min-width:298px;margin:0 10px}
+.pop_alert .pd_inner{display:table;width:100%;height:109px}
+.pop_alert .ptxt{line-height:1.4;font-size:14px;word-break:keep-all;padding-left:18px;padding-right:18px}

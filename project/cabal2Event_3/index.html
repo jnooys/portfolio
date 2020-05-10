@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>주사위를 굴려라!!</title>
+<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./css/event.css" />
+<link rel="shortcut icon" href="http://www.cabal2.co.kr/resources/Site/images/common/cb2_favicon.ico" type="image/x-icon" /> 
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./js/dice.js"></script>
+<script src="./js/ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="section top">
+        <h1><a href="http://www.cabal2.co.kr/main"><span class="blind">CABAL2</span></a></h1>
+        <ul class="util">
+            <li class="u1"><a href=""><span class="bg"></span><span class="txt">홈페이지</span></a></li>
+            <li class="u2"><a href=""><span class="bg"></span><span class="txt">텍스트</span></a></li>
+        </ul>
+        <div class="container">
+            <span class="particle cloud1"></span>
+            <span class="particle cloud2"></span>
+            <span class="particle ball1"></span>
+            <span class="particle ball2"></span>
+            <span class="char"></span>
+            <h2><span class="blind">주사위를 굴려라!!</span></h2>
+            <p class="period"><span class="blind">이벤트 기간 : 2017. 04. 11 점검 후 ~ 2017. 05. 16 점검 전</span></p>
+            <div class="process">
+                <div>
+                    <ul class="blind">
+                        <li>01.주사위 모으기: 매일 접속 30분마다 주사위 1개 획득</li>
+                        <li>02.주사위 굴리기: 이동한 위치에 있는 아이템 획득</li>
+                        <li>03.완부 보상 획득: 한 바퀴 완주시마다 아이템 획득</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section content">
+        <div class="container">
+            <h3 class="blind">주사위 굴리기</h3>
+            <div class="board_wrap">
+                <div class="board_box">
+                    <div class="board">
+                        <!--현재 위치는 클래스 on 추가-->
+                        <div class="r0 on"><span>한 바퀴 완주 시 부서진 룬 조각 5개</span></div>
+                        <div class="r1"><span>[이벤트] 축복의 기운 1개</span></div>
+                        <div class="r2"><span>[이벤트] 고르그의 묘약 3개</span></div>
+                        <div class="r3"><span>도전의 비약Ⅰ1개</span></div>
+                        <div class="r4"><span>포스 크리스탈 2개</span></div>
+                        <div class="r5"><span>[이벤트] 사비크의 물약 3개</span></div>
+                        <div class="r6"><span>상급 어빌리티 코어 상자 (Lv 100 ~ Lv 140) 1개</span></div>
+                        <div class="r7"><span>[이벤트] 부활석 1개</span></div>
+                        <div class="r8"><span>[이벤트] 키반의 묘약 3개</span></div>
+                        <div class="r9"><span>도전의 비약Ⅱ 1개</span></div>
+                        <div class="r10"><span>재연마 상자 (Lv 100 ~ Lv 140) 1개</span></div>
+                        <div class="r11"><span>[이벤트] 광폭의 묘약 3개</span></div>
+                        <div class="r12"><span>룬 상자 1개</span></div>
+                        <div class="r13"><span>세력의 비약Ⅰ 1개</span></div>
+                        <div class="r14"><span>[이벤트] 용맹한 기운의 두루마리Ⅰ 3개</span></div>
+                        <div class="r15"><span>[이벤트] 견디셔 3개</span></div>
+                        <div class="r16"><span>슬롯 확장석 상자 II 1개</span></div>
+                        <div class="r17"><span>[이벤트] 지속 회복 신약 3개</span></div>
+                        <div class="r18"><span>상급 업그레이드 코어 상자 (Lv 100 ~ Lv 140) 1개</span></div>
+                        <div class="r19"><span>세력의 비약Ⅱ 1개</span></div>
+                        <div class="r20"><span>[이벤트] 강인한 인내의 두루마리Ⅰ 3개</span></div>
+                        <div class="r21"><span>[이벤트] 달달한 초콜릿 3개</span></div>
+                        <div class="r22"><span>찬란한 유물상자 (Lv 100 ~ Lv 140) 1개</span></div>
+                        <div class="r23"><span>환생의 기운Ⅰ - 1시간 1개</span></div>
+                    </div>
+                    <div class="arrow">
+                        <div class="ar_h ar_top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="ar_v ar_right">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="ar_h ar_btm">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="ar_v ar_left">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <span class="start"><span></span></span>
+                    <!--말-->
+                    <span class="mark"></span>
+                </div>
+                <div class="board_center">
+                    <div class="btn_item"><a href="#n"><span class="blind">나의 보상 아이템</span></a></div>
+                    <span class="dice">
+                        <span></span>
+                    </span>
+                    <div class="btn_roll">
+                        <span class="btn_bg b_sd"><span></span></span>
+                        <span class="btn_bg b_bg1"></span>
+                        <a href="#n"><span class="blind">주사위 굴리기</span></a>
+                    </div>
+                    <div class="score_box">
+                        <div class="score c_dice">
+                            <h3><span class="blind">나의 주사위 개수</span></h3>
+                            <span class="count">
+                                <!--
+                                백의 자리 클래스: n_100s
+                                십의 자리 클래스: n_10s
+                                일의 자리 클래스: n_1s
+                                숫자 없으면 자리 수 클래스만 존재
+                                각 자리수 숫자 있으면 숫자에 따라 클래스 n0 ~ n9까지 추가-->
+                                <span class="n_100s"></span>
+                                <span class="n_10s"></span>
+                                <span class="n_1s n8"></span>
+                            </span>
+                        </div>
+                        <div class="score c_run">
+                            <h3><span class="blind">나의 완주 횟수</span></h3>
+                            <span class="count">
+                                <span class="n_100s n0"></span>
+                                <span class="n_10s n0"></span>
+                                <span class="n_1s n0"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section footer">
+        <div class="container">
+            <div class="ps">
+                <h3><span class="blind"></span></h3>
+                <ul>
+                    <li>1. 매일 접속 30분마다 주사위 1개를 획득하며 일 최대 4개까지 획득 가능합니다. (00시 초기화)</li>
+                    <li>2. 접속 시간은 계정단위로 체크되며 웹페이지 적용되기까지 시간이 소요될 수 있습니다.</li>
+                    <li>3. 주사위 굴리기 1회 이용 시 주사위 1개가 차감됩니다.</li>
+                    <li>4. 이벤트 아이템은 캐시 인벤토리로 지급됩니다. (캐시 인벤토리 : 7일)</li>
+                    <li>5. 상자류는 획득 시 1일, 만료 기간이 있는 경우 2017년 5월 23일 09시 일괄 삭제됩니다.</li>
+                    <li>6. 이벤트 아이템은 소유 기간 및 귀속 속성이 존재하며 교환, 환불, 복구가 불가합니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="quick">
+        <ul>
+            <li class="quick1"><a href="http://www.cabal2.co.kr/linker/17dice_n" target="_blank"><span class="bg_q"></span><span class="q_txt">카발2 신규 혜택</span></a></li>
+            <li class="quick2"><a href="http://www.cabal2.co.kr/linker/17dice_r" target="_blank"><span class="bg_q"></span><span class="q_txt">카발2 복귀 혜택</span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="layerpop">
+    <span class="bg_pop"></span>
+    <div class="pop">
+        <a href="" class="btn_close"><span class="blind">닫기</span></a>
+        <div class="pop_body">
+            <h3>아이템 획득 현황</h3>
+            <div class="table_wrap">
+                <table>
+                <thead>
+                <tr>
+                    <th scope="col" class="tb1">수령 일자</th>
+                    <th scope="col" class="tb2">구분</th>
+                    <th scope="col">내역</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="tb1">2017-02-28 12:00:00 AM</td>
+                    <td class="tb2">3칸</td>
+                    <td>[이벤트] 강인한 인내의 두루마리Ⅰ 3개</td>
+                </tr>
+                <tr>
+                    <td class="tb1">2017-02-28 12:00:00 AM</td>
+                    <td class="tb2">2칸</td>
+                    <td>상급 업그레이드 코어 상자 (Lv 100 ~ Lv 140) 1개</td>
+                </tr>
+                <tr>
+                    <td class="tb1">2017-02-28 12:00:00 AM</td>
+                    <td class="tb2">완주</td>
+                    <td>상급 업그레이드 코어 상자 (Lv 100 ~ Lv 140) 1개</td>
+                </tr>
+                <tr>
+                    <td class="tb1">2017-02-28 12:00:00 AM</td>
+                    <td class="tb2">1칸</td>
+                    <td>상급 업그레이드 코어 상자 (Lv 100 ~ Lv 140) 1개</td>
+                </tr>
+                <tr>
+                    <td class="tb1">2017-02-28 12:00:00 AM</td>
+                    <td class="tb2">6칸</td>
+                    <td>상급 업그레이드 코어 상자 (Lv 100 ~ Lv 140) 1개</td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="pager">
+                <a href="" class="move first"><span class="blind">처음으로</span></a>
+                <a href="" class="move prev"><span class="blind">이전</span></a>
+                <span>
+                    <a href="" class="on">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                </span>
+                <a href="" class="move next"><span class="blind">다음</span></a>
+                <a href="" class="move last"><span class="blind">마지막으로</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

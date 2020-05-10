@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<title>CABAL</title>
+<link rel="stylesheet" href="./css/ranking.css">
+<link rel="icon" href="http://image.cabal.co.kr/favicon/favicon.ico" type="image/x-icon">
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.min.js"></script>
+<script src="./js/ranking.js"></script>
+</head>
+<body>
+<a href="#content" class="skip">Skip To Main Contents</a>
+<div class="wrap sub character">
+    <!--header-->
+    <div class="section header">
+        <div class="header_content">
+            <div class="container">
+                <h1><a href="./index.html"><span class="blind">CABAL</span></a></h1>
+                <div class="menu_wrap">
+                    <h2 class="blind">Menu</h2>
+                    <ul class="gnb">
+                        <li class="link">
+                            <a href="./LB_dungeon-clear.html" class="depth1">Leader Board</a>
+                            <div class="depth2">
+                                <div>
+                                    <ul>
+                                        <li class="d2_dc"><a href="./LB_dungeon-clear.html" class="lb_dc"><span class="mcon"></span><span class="text">Dungeon Clear</span></a></li>
+                                        <li class="d2_ach"><a href="./LB_achievement.html" class="lb_ach"><span class="mcon"></span><span class="text">Achievement</span></a></li>
+                                        <li class="d2_hp"><a href="./LB_honor-point.html" class="lb_hp"><span class="mcon"></span><span class="text">Honor Point</span></a></li>
+                                        <li class="d2_ad"><a href="./LB_ATK-DEF.html" class="lb_ad"><span class="mcon"></span><span class="text">ATK/DEF</span></a></li>
+                                        <li class="d2_mw"><a href="./LB_mission-war.html" class="lb_mw"><span class="mcon"></span><span class="text">Mission War</span></a></li>
+                                        <li class="d2_gsc"><a href="./LB_guild-score.html" class="lb_gsc"><span class="mcon"></span><span class="text">Guild Score</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </li>
+                        <li class="link hover">
+                            <a href="./CR_ATK-DEF.html" class="depth1">Character Ranking</a>
+                            <div class="depth2 on">
+                                <div>
+                                    <ul>
+                                        <li class="d2_ad"><a href="./CR_ATK-DEF.html"><span class="mcon"></span><span class="text">ATK/DEF</span></a></li>
+                                        <li class="d2_wex"><a href="./CR_wexp.html"><span class="mcon"></span><span class="text">WEXP</span></a></li>
+                                        <li class="d2_hp"><a href="./CR_honor-point.html"><span class="mcon"></span><span class="text">Honor Point</span></a></li>
+                                        <li class="d2_dc"><a href="./CR_dungeon-clear.html"><span class="mcon"></span><span class="text">Dungeon Clear</span></a></li>
+                                        <li class="d2_mw on"><a href="./CR_mission-war.html"><span class="mcon"></span><span class="text">Mission War</span></a></li>
+                                        <li class="d2_il"><a href="./CR_item-looting.html"><span class="mcon"></span><span class="text">Item Looting</span></a></li>
+                                        <li class="d2_uh"><a href="./CR_upgrade-history.html"><span class="mcon"></span><span class="text">Upgrade History</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="link">
+                            <a href="./GR_guild-score.html" class="depth1">Guild Ranking</a>
+                            <div class="depth2">
+                                <div>
+                                    <ul>
+                                        <li class="d2_gsc"><a href="./GR_guild-score.html"><span class="mcon"></span><span class="text">Guild Score</span></a></li>
+                                        <li class="d2_wex"><a href="./GR_wexp.html"><span class="mcon"></span><span class="text">WEXP</span></a></li>
+                                        <li class="d2_ach"><a href="./GR_achievement.html"><span class="mcon"></span><span class="text">Achievement</span></a></li>
+                                        <li class="d2_hp"><a href="./GR_honor-point.html"><span class="mcon"></span><span class="text">Honor Point</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sch">
+                            <a href="javascript:return false;" class="depth1">Search</a>
+                            <div class="depth2">
+                                <div class="search_menu">
+                                    <div class="search_con">
+                                        <div class="search_input sch_char">
+                                            <h2><label for="searchChar">Search Character</label></h2>  
+                                            <form>
+                                                <div class="input_search">
+                                                    <input type="text" autocomplete="off" class="search_text" id="searchChar">
+                                                    <input type="button" class="search_btn" value="search">
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="search_input sch_guild">
+                                            <h2><label for="searchGuild">Search Guild</label></h2>
+                                            <form>
+                                                <div class="input_search">
+                                                    <input type="text" autocomplete="off" class="search_text" id="searchGuild">
+                                                    <input type="button" class="search_btn" value="search">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </li> 
+                    </ul>
+                    <div class="lang">
+                        <div class="select">
+                            <a href="" class="default depth1"><span>Language</span></a>
+                            <div class="option">
+                                <ul>
+                                    <li><a href="">Português</a></li>
+                                    <li><a href="">简体中文</a></li>
+                                    <li><a href="">Deutsch</a></li>
+                                    <li><a href="">English</a></li>
+                                    <li><a href="">Lietuvių</a></li>
+                                    <li><a href="">Русский</a></li>
+                                    <li><a href="">ภาษาไทย</a></li>
+                                    <li><a href="">Türkçe</a></li>
+                                    <li><a href="">繁體中文</a></li>
+                                    <li><a href="">Tiếng việt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--content-->
+    <div class="section content mission_war" id="content">
+        <div class="container">
+            <div class="content_header">
+                <div class="header_left">
+                    <h2>Character Ranking</h2>
+                    <span>Mision War Status</span>
+                </div>
+                <div class="header_right">
+                    <div class="select sbasic server">
+                        <a href="" class="default"><span>Server</span></a>
+                        <div class="option">
+                            <ul>
+                                <li><a href="">Server</a></li>
+                                <li><a href="">Персонаж Очки</a></li>
+                                <li><a href="">Servidor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <dl class="updated">
+                        <dt>Last Updated : </dt>
+                        <dd>2015-07-10</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="content_wrap">
+                <div class="content_title">
+                    <h3>Mision War Status</h3>
+                    <div class="mission_select">
+                        <div class="ms_wrap">
+                            <div class="mfloat align_lv">
+                                <div class="select swhite">
+                                    <a href="" class="default"><span>Level Tier</span></a>
+                                    <div class="option">
+                                        <ul>
+                                            <li><a href="">Lv. 52-79</a></li>
+                                            <li><a href="">Lv. 80-109</a></li>
+                                            <li><a href="">Lv. 110-139</a></li>
+                                            <li><a href="">Lv. 140-169</a></li>
+                                            <li><a href="">Lv. 170-200</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mfloat align_ms">
+                                <ul>
+                                    <li class="on"><a href="" class="score"><span>Score</span></a></li>
+                                    <li><a href="" class="kill"><span>Kill Count</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select sbasic terms">
+                        <a href="" class="default"><span>Weekly</span></a>
+                        <div class="option">
+                            <ul>
+                                <li><a href="" class="">Weekly</a></li>
+                                <li><a href="" class="">All</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_wrap table2">
+                    <span class="tb_bg bg_top">
+                        <span class="bg_tl"></span>
+                        <span class="bg_tr"></span>
+                        <span class="bg_tc"></span>
+                    </span>
+                    <span class="tb_bg bg_bor">
+                        <span class="bdl"></span>
+                        <span class="bdr"></span>
+                    </span>
+                    <span class="tb_bg bg_btm">
+                        <span class="bg_bl"></span>
+                        <span class="bg_bc"></span>
+                        <span class="bg_br"></span>
+                    </span>
+                    <div class="tbox">
+                        <table class="tb_char7">
+                        <thead>
+                        <tr>
+                            <th scope="col" class="tb_rank">Rank</th>
+                            <th scope="col" class="tb_point">Score</th>
+                            <th scope="col" class="tb_name">Name</th>
+                            <th scope="col" class="tb_level">Level</th>
+                            <th scope="col" class="tb_guild">Guild</th>
+                            <th scope="col" class="tb_class">Class</th>
+                            <th scope="col" class="tb_nation tb_last">Nation</th>
+                        </tr>
+                        </thead>
+                        <!--20개씩 출력-->
+                        <tbody>
+                        <!--top3까지 tr에 클래스 tr_top3, 1위는 medal1 클래스-->
+                        <tr class="tr_top3 medal1">
+                            <td class="tb_rank">
+                                <span class="ranking">1</span>
+                                <!--오를 땐 클래스 vary increase-->
+                                <span class="vary increase">1</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.200</span></td>
+                            <td class="tb_guild"><span class="elps" title="Z">Z</span></td>
+                            <!--워리어 클래스 icon warrior-->
+                            <td class="tb_class"><span class="icon warrior"></span></td>
+                            <!--프로키온 클래스 icon procyon-->
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr>  
+                        <!--top3까지 tr에 클래스 tr_top3, 2위는 medal2 클래스-->
+                        <tr class="tr_top3 medal2">
+                            <td class="tb_rank">
+                                <span class="ranking">2</span>
+                                <!--변화 없을 땐 클래스 vary decrease-->
+                                <span class="vary decrease">1</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.10</span></td>
+                            <td class="tb_guild"><span class="elps"></span></td>
+                            <!--블레이더 클래스 icon blader-->
+                            <td class="tb_class"><span class="icon blader"></span></td>
+                            <!--카펠라 클래스 icon capella-->
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>
+                        <!--top3까지 tr에 클래스tr_top3, 3위는 medal3 클래스-->
+                        <tr class="tr_top3 medal3">
+                            <td class="tb_rank">
+                                <span class="ranking">3</span>
+                                <!--내릴 땐 클래스 vary nochange-->
+                                <span class="vary nochange">0</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="SuperKan">SuperKan</span></td>
+                            <td class="tb_level"><span class="elps">Lv.120</span></td>
+                            <td class="tb_guild"><span class="elps" title="Ascension">Ascension</span></td>
+                            <!--위자드 클래스 icon wizard-->
+                            <td class="tb_class"><span class="icon wizard"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>        
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">4</span>
+                                <span class="vary increase">13</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.19</span></td>
+                            <td class="tb_guild"><span class="elps" title="Guild 1">Guild 1</span></td>
+                            <!--포스아처 클래스 icon farcher-->
+                            <td class="tb_class"><span class="icon farcher"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr>  
+                        <!--top3를 제외한 짝수 tr 태그에 클래스 even 추가-->
+                        <tr class="even">
+                            <td class="tb_rank">
+                                <span class="ranking">5</span>
+                                <span class="vary increase">999</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="SuperKan">SuperKan</span></td>
+                            <td class="tb_level"><span class="elps">Lv.49</span></td>
+                            <td class="tb_guild"><span class="elps" title="Guild 100">Guild 100</span></td>
+                            <!--포스실더 클래스 icon fshielder-->
+                            <td class="tb_class"><span class="icon fshielder"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr> 
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">6</span>
+                                <span class="vary nochange">0</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="CherrySweet">CherrySweet</span></td>
+                            <td class="tb_level"><span class="elps">Lv.200</span></td>
+                            <td class="tb_guild"><span class="elps" title="Hello">Hello</span></td>
+                            <!--포스블레이더 클래스 icon fblader-->
+                            <td class="tb_class"><span class="icon fblader"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr>      
+                        <tr class="even">
+                            <td class="tb_rank">
+                                <span class="ranking">7</span>
+                                <span class="vary decrease">3</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.50</span></td>
+                            <td class="tb_guild"><span class="elps" title="zDreamTeam">zDreamTeam</span></td>
+                            <!--글래디에이터 클래스 icon gladiator-->
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr>   
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">8</span>
+                                <span class="vary nochange">0</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.78</span></td>
+                            <td class="tb_guild"><span class="elps" title="SovereignKnights">SovereignKnights</span></td>
+                            <td class="tb_class"><span class="icon fblader"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr> 
+                        <tr class="even">
+                            <td class="tb_rank">
+                                <span class="ranking">9</span>
+                                <span class="vary decrease">1</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.200</span></td>
+                            <td class="tb_guild"><span class="elps" title="Bag of Wonders">Bag of Wonders</span></td>
+                            <td class="tb_class"><span class="icon farcher"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>     
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">10</span>
+                                <span class="vary increase">1</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="CherrySweet">CherrySweet</span></td>
+                            <td class="tb_level"><span class="elps">Lv.17</span></td>
+                            <td class="tb_guild"><span class="elps"></span></td>
+                            <td class="tb_class"><span class="icon fshielder"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>  
+                        <tr class="even">
+                            <td class="tb_rank">
+                                <span class="ranking">11</span>
+                                <span class="vary increase">1</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.7</span></td>
+                            <td class="tb_guild"><span class="elps" title="NightGuard">NightGuard</span></td>
+                            <td class="tb_class"><span class="icon warrior"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr> 
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">12</span>
+                                <span class="vary increase">3</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">111</span></td>
+                            <td class="tb_name"><span class="elps" title="CherrySweet">CherrySweet</span></td>
+                            <td class="tb_level"><span class="elps">Lv.93</span></td>
+                            <td class="tb_guild"><span class="elps" title="NightGuard">NightGuard</span></td>
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>  
+                        <tr class="even">
+                            <td class="tb_rank">
+                                <span class="ranking">13</span>
+                                <span class="vary nochange">0</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">999</span></td>
+                            <td class="tb_name"><span class="elps" title="James123">James123</span></td>
+                            <td class="tb_level"><span class="elps">Lv.1</span></td>
+                            <td class="tb_guild"><span class="elps" title="NightGuard">NightGuard</span></td>
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>  
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">14</span>
+                                <span class="vary decrease">3</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">9,999</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.50</span></td>
+                            <td class="tb_guild"><span class="elps" title="zDreamTeam">zDreamTeam</span></td>
+                            <!--글래디에이터 클래스 icon gladiator-->
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr>
+                        <tr class="even">
+                            <td class="tb_rank">
+                                <span class="ranking">15</span>
+                                <span class="vary increase">1</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">2,000</span></td>
+                            <td class="tb_name"><span class="elps" title="My Name">My Name</span></td>
+                            <td class="tb_level"><span class="elps">Lv.7</span></td>
+                            <td class="tb_guild"><span class="elps" title="NightGuard">NightGuard</span></td>
+                            <td class="tb_class"><span class="icon warrior"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr> 
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">16</span>
+                                <span class="vary increase">3</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">111</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.93</span></td>
+                            <td class="tb_guild"><span class="elps" title="NightGuard">NightGuard</span></td>
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>  
+                        <tr class="even">
+                            <td class="tb_rank">
+                                <span class="ranking">17</span>
+                                <span class="vary nochange">0</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">999</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.1</span></td>
+                            <td class="tb_guild"><span class="elps" title="NightGuard">NightGuard</span></td>
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>  
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">18</span>
+                                <span class="vary decrease">9</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">9,999</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.50</span></td>
+                            <td class="tb_guild"><span class="elps" title="zDreamTeam">zDreamTeam</span></td>
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr>    
+                        <tr class="even">
+                            <td class="tb_rank">
+                                <span class="ranking">19</span>
+                                <span class="vary nochange">0</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">799</span></td>
+                            <td class="tb_name"><span class="elps" title="Toto">Toto</span></td>
+                            <td class="tb_level"><span class="elps">Lv.1</span></td>
+                            <td class="tb_guild"><span class="elps" title="NightGuard">NightGuard</span></td>
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon capella"></span></td>
+                        </tr>  
+                        <tr>
+                            <td class="tb_rank">
+                                <span class="ranking">9,999</span>
+                                <span class="vary decrease">1</span>
+                            </td>
+                            <td class="tb_point"><span class="elps">9,999</span></td>
+                            <td class="tb_name"><span class="elps" title="Great Park">Great Park</span></td>
+                            <td class="tb_level"><span class="elps">Lv.50</span></td>
+                            <td class="tb_guild"><span class="elps" title="zDreamTeam">zDreamTeam</span></td>
+                            <td class="tb_class"><span class="icon gladiator"></span></td>
+                            <td class="tb_nation tb_last"><span class="icon procyon"></span></td>
+                        </tr>             
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="table_pager">
+                    <a href="" class="on">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="section footer">
+        <div class="container">
+            <address><span class="estgames"></span><span>Copyright ⓒ <a href="http://www.estsoft.com" target="_blank">ESTsoft Corp.</a> All Rights Reserved.</span></address>
+        </div>
+    </div>
+</div>
+</body>
+</html>

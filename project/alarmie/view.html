@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>링스토어</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="./css/common.css" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+</head>
+<body>
+<script>var pageNum = 1;</script>
+<h1 class="blind">링 스토어 알람 리스트</h1>
+<div class="content_wrap">
+	<article class="content">
+        <header>
+            <div class="header_con">
+                <h2>귀여운 아침 모닝콜</h2>
+                <ul class="add_ex">
+                    <li class="a_name">양정화<span></span></li>
+                    <li>조회 301508</li>
+                    <li>다운 12</li>
+                    <li>댓글 20</li>
+                    <li>사용 유효기간 무제한</li>
+                </ul>
+                <div class="h_i_wrap">
+                    <ul class="al_info">
+                        <li class="alarm"><span class="blind">알람</span>6</li>
+                        <li class="timer"><span class="blind">타이머</span>6</li>
+                        <li class="ex_alarm"><span class="blind">정각알림</span>12</li>
+                    </ul>
+                    <a href="#n" class="look_more"><span class="cover"></span>상세보기</a>
+                </div>
+                <div class="btn_area">
+                    <a href="#n" class="big_listen">재생</a><!-- 버튼 클릭했을 때 클래스 on , 텍스트 '정지' -->
+                    <a href="#buyRing" class="btn_popopen big_down">100P</a><!-- 다운로드 끝났을 땐 클래스 finish 추가, 텍스트 '다운완료' -->
+                </div>
+                <div class="menu_more">
+                    <a href="#n" class="btn_more"><span class="blind">더보기</span></a>
+                    <ul style="display:none">
+                        <li class="m_1"><a href="#n">공유하기</a></li>
+                        <li class="m_2"><a href="#n">URL 복사</a></li>
+                        <li class="m_3"><a href="./notify_content.html">신고하기</a></li>
+                        <li class="last"><a href="#n">삭제하기</a></li>
+                    </ul>
+                </div>
+        	</div>
+        	<div class="al_detail" style="display:none">
+        	    <h3 class="blind">상세정보</h3>
+                <h4 class="alarm_de">알람</h4>
+                <h5>버전1(남자 아나운서)</h5>
+                <ul>
+                    <li>메인알람_모닝콜</li>
+                    <li>메인알람_일정알림</li>
+                    <li>외출알림</li>
+                    <li>마지막알람</li>
+                </ul>
+                <h5>버전2(여자 아나운서)</h5>
+                <ul>
+                    <li>메인알람_모닝콜</li>
+                    <li>메인알람_일정알림</li>
+                    <li>외출알림</li>
+                    <li>마지막알람</li>
+                </ul>                              
+                <h4 class="timer_de">타이머</h4>
+                <ul>
+                    <li>일반타이머</li>
+                    <li>추천타이머</li>
+                    <li>(컵라면,계란반숙,팩,운동,빨래,토익RC)</li>
+                </ul>        	        
+                <h4 class="ex_alarm_de">정각알림</h4>
+                <h5>버전1(남자 아나운서)</h5>
+                <ul>
+                    <li>일반 알림(특별알림 제외시간)</li>
+                    <li>특별 알림(9시, 12시, 18시)</li>
+                </ul>
+                <a href="#n" class="detail_close"><span class="blind">상세정보 닫기</span></a>
+        	</div>
+        	<div class="notify" style="display:none">
+        	    <p>해당 링은 부적절한 컨텐츠로 신고가 접수되어<br>재생 및 다운로드를 제한합니다</p>
+        	</div>
+        </header>
+        <p>
+        안녕하세요 제가 처음 만들어본 알람이에요. <br>
+        제가 직접 녹음했는데 어떤가요? <br>
+        아침을 깨우기 위한 알람입니다! <br>
+        다음에 또 다른 알람 녹음해볼게요~
+        </p>
+    </article>
+    <!--0202 수정-->
+    <section class="ring_btn">
+        <!--좋아요, 댓글쓰기 버튼-->
+        <div class="btn_wrap">
+           <div class="btn_area">
+                <div class="btn_box">
+                    <!--좋아요 선택될경우 <a class="btn_like"> 에 클래스 liked 추가-->
+                    <span><a href="#n" class="btn_like"><span class="text">좋아요</span><span class="cover"></span></a></span>
+                    <span class="space"></span>
+                    <span><a href="#n" class="btn_comment"><span class="text">댓글쓰기</span><span class="cover"></span></a></span>
+                </div>
+           </div>
+           <div class="like_member"><p>안드로이드 유저, 회원님 외 <strong>13</strong>명이 좋아합니다.</p></div>
+        </div>
+        <!--댓글 작성-->
+        <div class="cmt_ipt">
+           <form method="post">
+               <fieldset>
+                   <legend>댓글 입력</legend>
+                   <label for="write_cm">댓글을 입력하세요</label>
+                   <span class="text_wrap"><span class="comment_input_wrap"><textarea id="write_cm" cols="" rows="1"></textarea></span></span>
+                   <span class="cover_ipt"><span class="cover"></span><input type="submit" value="입력" class="sbm_cm"></span>
+               </fieldset>
+           </form>
+        </div>  
+    </section>
+    <!--//0202 수정-->
+    <section class="comment">
+        <h2 class="blind">댓글</h2>
+        <div class="cmt_list">
+        	<ul>
+            	<li>
+                    <span class="name">안드로이드 유저</span>
+                    <div class="c_info">
+                        <span class="time">1시간전</span>
+                        <a href="./notify_comment.html" class="noti">신고</a>
+                    </div>
+                    <p>들어보세요 진짜웃겨요~</p>
+                    <a href="#boardDel" class="delete btn_popopen"><span class="blind">삭제</span></a>
+                </li>
+            	<li>
+                    <span class="name">좋아효 하트하트!!</span>
+                    <div class="c_info">
+                        <span class="time">1시간전</span>
+                        <a href="./notify_comment.html" class="noti">신고</a>
+                    </div>
+                    <p>알람이 너무 재밌어요~ 매일 아침마다 들으면 잘 일어날거 같아요 역시 최고! </p>
+                    <a href="#boardDel" class="delete btn_popopen"><span class="blind">삭제</span></a>
+                </li>
+                <!--숨겨진 댓글은 li에 클래스 notified 추가-->
+            	<li class="notified">
+                    <span class="name">도깨비</span>
+                    <div class="c_info">
+                        <span class="time">3시간전</span>
+                    </div>
+                    <p>신고가 접수되어 숨겨진 댓글입니다</p>
+                    <a href="#boardDel" class="delete btn_popopen"><span class="blind">삭제</span></a>
+                </li>                
+            </ul>
+        </div>
+        <!--페이징-->
+        <div class="pager"><!--버튼 클릭 불가능할 땐 off, 클릭 가능할때 on-->
+            <a href="#n" class="p_prev off"><span class="blind">이전</span></a>
+            <span class="pager_txt">1-30 / 304</span>
+            <a href="#n" class="p_next on"><span class="blind">다음</span></a>
+        </div>
+    </section>
+</div>
+<a href="#n" class="quick"><span class="blind">맨 위로</span></a>
+<span class="bg" style="display:none"></span>
+<!--글 삭제 레이어 팝업-->
+<div class="pop view_del" id="boardDel" style="display:none">
+	<p class="pop_txt">해당 게시물을 삭제하겠습니까?</p>
+    <div class="pop_btn">
+    	<a href="#n" class="cancel"><span class="cover"></span>취소</a>
+        <a href="#n" class="show"><span class="cover"></span>확인</a>
+    </div>
+</div>
+<!--//글 삭제 레이어 팝업-->
+<!--구매완료 팝업 1-->
+<div class="pop pop_pack" id="buyRing" style="display:none">
+	<div class="pop_txt">
+	    <h3>귀여운 아침 모닝콜</h3>
+	    <span class="user">양정화</span>
+	    <span class="point"><span class="blind">가격</span>100</span>
+	</div>
+    <div class="btn_area">
+    	<a href="#n"><span class="cover"></span>바로적용</a>
+        <a href="#n" class="safe"><span class="cover"></span>보관함 보기</a>
+        <a href="#n" class="confirm"><span class="cover"></span>확인</a>
+    </div>
+    <a href="#n" class="close"><span class="blind">닫기</span></a>
+</div>
+<!--//구매완료 팝업 1-->
+<!--구매완료 팝업 2-->
+<div class="pop pop_pack pack_end" style="display:none">
+	<div class="pop_txt">
+	    <h3>[링팩] 귀여운 아기</h3>
+	    <span class="user">나는 이거 올린사람</span>
+	    <span class="point"><span class="blind">가격</span>99,999</span>
+	</div>
+    <p class="pack_save">보관함에 저장되었습니다.</p>
+    <div class="btn_area">
+    	<a href="#n"><span class="cover"></span>바로적용</a>
+        <a href="#n" class="safe"><span class="cover"></span>보관함 보기</a>
+        <a href="#n" class="confirm"><span class="cover"></span>확인</a>
+    </div>
+    <a href="#n" class="close"><span class="blind">닫기</span></a>
+</div>
+<!--//구매완료 팝업 2-->
+<!--공유하기 팝업-->
+<div class="pop pop_share" style="display:none">
+	<p>해당 링의 링 스토어 주소를<br />공유합니다</p>
+    <ul>
+    	<li class="s1"><a href="#n"><span class="cover"></span>Facebook으로 공유</a></li>
+        <li class="s2"><a href="#n"><span class="cover"></span>카카오스토리로 공유</a></li>
+        <li class="s3"><a href="#n"><span class="cover"></span>Twitter로 공유</a></li>
+        <li class="s4"><a href="#n"><span class="cover"></span>더보기</a></li>
+    </ul>
+    <a href="#n" class="close"><span class="blind">닫기</span></a>
+</div>
+<!--//공유하기 팝업-->
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

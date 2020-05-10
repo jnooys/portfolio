@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>반출관리</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<link rel="stylesheet" href="./css/common.css">
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./js/script.js"></script>
+</head>
+<body>
+<div class="wrap view">
+    <div class="header">
+        <div class="btn_header">
+            <h1 class="blind">반출관리</h1>
+            <a href="" class="btn_prev" onclick="history.go(-1);return false;"><span class="trans">반출목록</span></a>
+        </div>       
+        <h2>부결 내역</h2>
+    </div>
+    <div class="content">
+        <div class="view_wrap">
+            <h3>신청 정보</h3>
+            <table class="tb_apply">
+                <caption class="blind">신청 정보</caption>
+                <tbody>
+                <tr>
+                    <th scope="row">신청자</th>
+                    <td>권태영</td>
+                </tr>
+                <tr>
+                    <th scope="row">신청 날짜</th>
+                    <td>2014-10-22</td>
+                </tr>           
+                <tr>
+                    <th scope="row">반출 파일</th>
+                    <td class="td_file">
+                        <div>
+                            <span class="file_name">SNSSetup_sns.exe</span><span class="size">1293MB</span>
+                            <!--iOS는 다운로드 , 안드로이드에서는 미리보기 -->
+                            <a href="" class="btn_file btn_view"><span class="blind">미리보기</span></a>
+                            <a href="" class="btn_file btn_download" style="display:none"><span class="blind">다운로드</span></a>
+                        </div>
+                    </td>            
+                </tr> 
+                </tbody>
+            </table>
+            <h3>결재 정보</h3>
+            <table class="tb_sign">
+                <caption class="blind">결재 정보</caption>
+                <tbody>
+                <tr>
+                    <th scope="row">결재선 이름</th>
+                    <td>결재선</td>
+                </tr>
+                <tr>
+                    <th scope="row">1차</th>
+                    <td class="td_signer">
+                       <span class="signer">팀장(administrator)</span>
+                       <dl>
+                           <dt class="blind">코멘트</dt>
+                           <dd class="sign_co">결재 완료합니다.</dd>
+                           <dt class="blind">결재상태</dt>
+                           <dd><span class="state approval">결재완료</span><span class="sign_date">(2014-10-17)</span></dd>
+                       </dl>
+                    </td>
+                </tr> 
+                <tr>
+                    <th scope="row">2차</th>
+                    <td class="td_signer">
+                       <span class="signer">본부장(administrator)</span>
+                       <dl>
+                           <dt class="blind">코멘트</dt>
+                           <dd class="sign_co">반출 불허합니다.</dd>
+                           <dt class="blind">결재상태</dt>
+                           <dd><span class="state none">부결</span><span class="sign_date">(2014-10-17)</span></dd>
+                       </dl>
+                    </td>
+                </tr> 
+                </tbody>
+            </table>
+            <h3>신청 정보</h3>
+            <table class="tb_applyu">
+                <caption class="blind">신청 정보</caption>
+                <tbody>
+                <tr>
+                    <th scope="row">보내는 사람</th>
+                    <td>권태영</td>
+                </tr>
+                <tr>
+                    <th scope="row">받는 사람</th>
+                    <td>유재석</td>                    
+                </tr>
+                <tr>
+                    <th scope="row">참조</th>
+                    <td>김건우, 김하나</td>                    
+                </tr>    
+                <tr>
+                    <th scope="row">숨은 참조</th>
+                    <td>최연필</td>                    
+                </tr>  
+                <tr>
+                    <th scope="row">제목</th>
+                    <td>시연</td>                    
+                </tr> 
+                <tr>
+                    <th scope="row">내용</th>
+                    <td>곧 다가올 업계 세미나에서 제품 시연을 위해 파일 반출이 필요합니다.</td>      
+                </tr>
+                <tr>
+                    <th scope="row">다운로드 횟수</th>
+                    <td>3</td>                    
+                </tr> 
+                <tr>
+                    <th scope="row">다운로드 기간</th>
+                    <td>2014-10-22</td>                    
+                </tr>   
+                <tr>
+                    <th scope="row">비밀번호</th>
+                    <td>지정안함</td>                    
+                </tr>
+                <tr>
+                    <th scope="row">신청 사유</th>
+                    <td>협력업체 시연</td>                    
+                </tr>                                                                                                                                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
