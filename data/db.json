@@ -33,17 +33,17 @@
             "title": "팀업",
             "subtitle": "반응형 사이트",
             "date": "2018",
-            "url": "/project/TeamUP/main",
+            "url": "http://rongchyo.cafe24.com/project/TeamUP/main",
             "mainDev": false,
             "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)", "설정/회원 관련 페이지는 반응형으로 작업"],
             "thumbnail": "teamup_renew-1.jpg",
             "pages": [
-                {"name": "메인 PC", "url": "/project/TeamUP/main/"},
-                {"name": "메인 Mobile", "url": "/project/TeamUP/main/main_mobile.html"}, 
-                {"name": "로그인", "url" : "/project/TeamUP/ETC/login.html"}, 
-                {"name": "설정", "url": "/project/TeamUP/personal_settings/info-basic.html"}, 
-                {"name": "관리자페이지", "url" : "/project/TeamUP/manage/company-profile.html"}, 
-                {"name": "공지사항", "url": "/project/TeamUP/ETC/notice.html"}
+                {"name": "메인 PC", "url": "http://rongchyo.cafe24.com/project/TeamUP/main/"},
+                {"name": "메인 Mobile", "url": "http://rongchyo.cafe24.com/project/TeamUP/main/main_mobile.html"}, 
+                {"name": "로그인", "url" : "http://rongchyo.cafe24.com/project/TeamUP/ETC/login.html"}, 
+                {"name": "설정", "url": "http://rongchyo.cafe24.com/project/TeamUP/personal_settings/info-basic.html"}, 
+                {"name": "관리자페이지", "url" : "http://rongchyo.cafe24.com/project/TeamUP/manage/company-profile.html"}, 
+                {"name": "공지사항", "url": "http://rongchyo.cafe24.com/project/TeamUP/ETC/notice.html"}
             ],
             "images": ["teamup_renew-2.jpg", "teamup_renew-3.jpg", "teamup_renew-4.jpg"]
         },
@@ -52,14 +52,14 @@
             "title": "카발",
             "subtitle": "글로벌 랭킹 사이트",
             "date": "2016",
-            "url":"/project/cabalRanking/main.html",
+            "url":"http://rongchyo.cafe24.com/project/cabalRanking/main.html",
             "mainDev": false,
             "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "cabal_ranking-1.jpg",
             "pages": [
-                {"name": "검색 결과", "url": "/project/cabalRanking/search_result.html"},
-                {"name": "검색 결과 - 캐릭터 정보", "url": "/project/cabalRanking/search_char_equipment.html"}, 
-                {"name": "검색 결과 - 길드 정보", "url": "/project/cabalRanking/search_guild_info.html"}
+                {"name": "검색 결과", "url": "http://rongchyo.cafe24.com/project/cabalRanking/search_result.html"},
+                {"name": "검색 결과 - 캐릭터 정보", "url": "http://rongchyo.cafe24.com/project/cabalRanking/search_char_equipment.html"}, 
+                {"name": "검색 결과 - 길드 정보", "url": "http://rongchyo.cafe24.com/project/cabalRanking/search_guild_info.html"}
             ],
             "images": ["cabal_ranking-1_1.jpg", "cabal_ranking-1_2.jpg", "cabal_ranking-1_3.jpg"]
         },
@@ -102,13 +102,13 @@
             "title": "알람이",
             "subtitle": "App 웹뷰",
             "date": "2014",
-            "url": "/project/alarmie/",
+            "url": "http://rongchyo.cafe24.com/project/alarmie/",
             "mainDev": false,
             "info": ["참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "alarmie-1.jpg",
             "pages": [
-                {"name": "계정 정보", "url": "/project/alarmie/account.html"}, 
-                {"name": "포인트샵", "url": "/project/alarmie/store_main.html"}
+                {"name": "계정 정보", "url": "http://rongchyo.cafe24.com/project/alarmie/account.html"}, 
+                {"name": "포인트샵", "url": "http://rongchyo.cafe24.com/project/alarmie/store_main.html"}
             ],
             "images": ["alarmie-1_1.jpg", "alarmie-1_2.jpg", "alarmie-1_3.jpg"]
         },
@@ -117,12 +117,12 @@
             "title": "인터넷디스크",
             "subtitle": "App 웹뷰",
             "date": "2014",
-            "url": "/project/internetdisk/list_yet-approve.html",
+            "url": "http://rongchyo.cafe24.com/project/internetdisk/list_yet-approve.html",
             "mainDev":false,
             "info": ["참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "internetdisk-1.jpg",
             "pages": [
-                {"name": "로그인", "url": "/project/internetdisk/"}
+                {"name": "로그인", "url": "http://rongchyo.cafe24.com/project/internetdisk/"}
             ],
             "images": ["internetdisk-1_1.jpg", "internetdisk-1_2.jpg", "internetdisk-1_3.jpg"]
         },
@@ -143,7 +143,7 @@
             "title": "바람의나라",
             "subtitle": "BJ 바린이 모집",
             "date": "2019",
-            "url": "/project/baramEvent_2/event1.html",
+            "url": "http://rongchyo.cafe24.com/project/baramEvent_2/event1.html",
             "mainDev": false,
             "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "br-event-1.jpg",
@@ -211,7 +211,7 @@
             "title": "카발2",
             "subtitle": "주사위를 굴려라!",
             "date": "2017",
-            "url": "/project/cabal2Event_3",
+            "url": "http://rongchyo.cafe24.com/project/cabal2Event_3",
             "mainDev": false,
             "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "c2e-3.jpg",
@@ -222,7 +222,7 @@
             "title": "카발2",
             "subtitle": "가위바위보 삼세판!",
             "date": "2017",
-            "url": "/project/cabal2Event_4",
+            "url": "http://rongchyo.cafe24.com/project/cabal2Event_4",
             "mainDev": false,
             "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "c2e-4.jpg",
@@ -233,7 +233,7 @@
             "title":"고양이 다방 일본",
             "subtitle": "App 웹뷰 이벤트",
             "date": "2018",
-            "url": "/project/catcafe_1/",
+            "url": "http://rongchyo.cafe24.com/project/catcafe_1/",
             "mainDev": false,
             "info": ["참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "cat-1.jpg",
@@ -244,7 +244,7 @@
             "title": "팀업",
             "subtitle": "브랜드 페이지",
             "date": "2015",
-            "url": "/project/TeamUP_v1/",
+            "url": "http://rongchyo.cafe24.com/project/TeamUP_v1/",
             "mainDev": false,
             "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "teamup-1.jpg",
@@ -255,7 +255,7 @@
             "title": "알메모",
             "subtitle": "브랜드 페이지",
             "date": "2015",
-            "url": "/project/ALmemo/",
+            "url": "http://rongchyo.cafe24.com/project/ALmemo/",
             "mainDev":false,
             "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "almemo.jpg",
