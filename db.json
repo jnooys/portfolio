@@ -1,36 +1,283 @@
-{
-    "project":{
-        "pc": [
-                {
-                    "title":"테일즈위버",
-                    "mainURL":"http://tales.nexon.com/Home/Main",
-                    "mainDev":true,
-                    "info":["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)", "해상도 1280 ~ 1920px까지 반응형으로 제작"],
-                    "thumbnail": "tw-1.jpg",
-                    "images": ["tw-4.jpg", "tw-2.jpg", "tw-3.jpg"]
-                }
-        ],
+{   
+    "category": [
+        {"id": "", "name": "All"},
+        {"id": "pc", "name": "PC"},
+        {"id": "mobile", "name": "Mobile"},
+        {"id": "event", "name": "Promotion/Event"}
+    ],
 
-        "mobile": [
-            {
-                "title":"카발 온라인",
-                "mainURL": "http://m.cabal.co.kr",
-                "mainDev":true,
-                "info":["참여도: 100% (회원 페이지를 제외한 HTML/CSS/Javascript/jQuery)"],
-                "thumbnail": "cabal_mobile-1.jpg",
-                "images":["cabal_mobile-1.jpg", "cabal_mobile-2.jpg", "cabal_mobile-3.jpg"]
-            }
-        ],
+    "project": [
+        {
+            "title": "테일즈위버",
+            "subtitle": "웹사이트",
+            "id": "pc",
+            "url": "http://tales.nexon.com/Home/Main",
+            "mainDev": true,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)", "해상도 1280 ~ 1920px까지 반응형으로 작업"],
+            "thumbnail": "tw-1.jpg",
+            "images": ["tw-1_1.jpg", "tw-1_2.jpg", "tw-1_3.jpg"]
+        },
 
-        "promotion": [
-            {
-                "title":"바람의나라- 바람 여름 업데이트",
-                "mainURL":"http://baram.nexon.com/E190725/GameseongEvent",
-                "mainDev":true,
-                "info":["참여도: 100% (HTML/CSS/Javascript/jQuery/HTML5 Canvas)"],
-                "thumbnail": "br-event-3.jpg",
-                "images": ["br-event-3_2.jpg", "br-event-3_4.jpg", "br-event-3_5.jpg"]
-            }
-        ]
-    }
+        {
+            "title": "아스가르드",
+            "subtitle": "웹사이트",
+            "id": "pc",
+            "url": "http://asgard.nexon.com/Main/Index",
+            "mainDev": true,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "asgard-1.jpg",
+            "images": ["asgard-1_1.jpg", "asgard-1_2.jpg", "asgard-1_3.jpg"]
+        },
+
+        {
+            "title": "팀업",
+            "subtitle": "반응형 사이트",
+            "id": "pc",
+            "url": "/project/TeamUP/main",
+            "mainDev": false,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)", "설정/회원 관련 페이지는 반응형으로 작업"],
+            "thumbnail": "teamup_renew-1.jpg",
+            "pages": [
+                {"name": "메인 PC", "url": "/project/TeamUP/main/"},
+                {"name": "메인 Mobile", "url": "/project/TeamUP/main/main_mobile.html"}, 
+                {"name": "로그인", "url" : "/project/TeamUP/ETC/login.html"}, 
+                {"name": "설정", "url": "/project/TeamUP/personal_settings/info-basic.html"}, 
+                {"name": "관리자페이지", "url" : "/project/TeamUP/manage/company-profile.html"}, 
+                {"name": "공지사항", "url": "/project/TeamUP/ETC/notice.html"}
+            ],
+            "images": ["teamup_renew-2.jpg", "teamup_renew-3.jpg", "teamup_renew-4.jpg"]
+        },
+
+        {
+            "title": "카발",
+            "subtitle": "글로벌 랭킹 사이트",
+            "id": "pc",
+            "url":"/project/cabalRanking/main.html",
+            "mainDev": false,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "cabal_ranking-1.jpg",
+            "pages": [
+                {"name": "검색 결과", "url": "/project/cabalRanking/search_result.html"},
+                {"name": "검색 결과 - 캐릭터 정보", "url": "/project/cabalRanking/search_char_equipment.html"}, 
+                {"name": "검색 결과 - 길드 정보", "url": "/project/cabalRanking/search_guild_info.html"}
+            ],
+            "images": ["cabal_ranking-1_1.jpg", "cabal_ranking-1_2.jpg", "cabal_ranking-1_3.jpg"]
+        },
+
+        {
+            "title": "카발",
+            "subtitle": "웹사이트",
+            "id": "pc",
+            "url": "http://www.cabal.co.kr",
+            "mainDev": true,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "cabal_pc-1.jpg",
+            "images": ["cabal_pc-1_1.jpg", "cabal_pc-1_2.jpg", "cabal_pc-1_3.jpg"]
+        },
+
+        {
+            "title": "알툴즈",
+            "subtitle": "웹사이트",
+            "id": "pc",
+            "url": "https://www.altools.co.kr",
+            "mainDev":true,
+            "info": ["IE6부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "altools_pc-1.jpg",
+            "images": ["altools_pc-1_1.jpg", "altools_pc-1_2.jpg", "altools_pc-1_3.jpg"]
+        },
+
+        {
+            "title":"카발 온라인",
+            "subtitle": "모바일 사이트",
+            "id": "mobile",
+            "url": "http://m.cabal.co.kr",
+            "mainDev":true,
+            "info":["참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "cabal_mobile-1.jpg",
+            "images":["cabal_mobile-1_1.jpg", "cabal_mobile-1_2.jpg", "cabal_mobile-1_3.jpg"]
+        },
+
+        {
+            "title": "알람이",
+            "subtitle": "App 웹뷰",
+            "id": "mobile",
+            "url": "/project/alarmie/",
+            "mainDev": false,
+            "info": ["참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "alarmie-1.jpg",
+            "pages": [
+                {"name": "계정 정보", "url": "/project/alarmie/account.html"}, 
+                {"name": "포인트샵", "url": "/project/alarmie/store_main.html"}
+            ],
+            "images": ["alarmie-1_1.jpg", "alarmie-1_2.jpg", "alarmie-1_3.jpg"]
+        },
+
+        {
+            "title": "인터넷디스크",
+            "subtitle": "App 웹뷰",
+            "id": "mobile",
+            "url": "/project/internetdisk/list_yet-approve.html",
+            "mainDev":false,
+            "info": ["참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "internetdisk-1.jpg",
+            "pages": [
+                {"name": "로그인", "url": "/project/internetdisk/"}
+            ],
+            "images": ["internetdisk-1_1.jpg", "internetdisk-1_2.jpg", "internetdisk-1_3.jpg"]
+        },
+
+        {
+            "title": "바람의나라",
+            "subtitle": "바람 여름 업데이트",
+            "id": "event",
+            "url": "http://baram.nexon.com/E190725/GameseongEvent",
+            "mainDev": true,
+            "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery/HTML5 Canvas)"],
+            "thumbnail": "br-event-3.jpg",
+            "images": ["br-event-3_2.jpg", "br-event-3_4.jpg", "br-event-3_5.jpg"]
+        },
+
+        {
+            "title": "바람의나라",
+            "subtitle": "BJ 바린이 모집",
+            "id": "event",
+            "url": "/project/baramEvent_2/event1.html",
+            "mainDev": false,
+            "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "br-event-1.jpg",
+            "images": ["br-event-1_1.jpg", "br-event-1_2.jpg"]
+        },
+
+        {
+            "title": "메이플스토리2",
+            "subtitle": "보름달 방앗간의 위기",
+            "id": "event",
+            "url": "http://maplestory2.nexon.com/events/20180920/ChuseokAllEvents",
+            "mainDev": true,
+            "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery/HTML5 Canvas)"],
+            "thumbnail": "ms2-event-2.jpg",
+            "images": ["ms2-event-2_1.jpg"]
+        },
+
+        {
+            "title": "테일즈위버",
+            "subtitle": "신규 사냥터 & 캐릭터 업데이트",
+            "id": "event",
+            "url": "http://tales.nexon.com/190418/update",
+            "mainDev": true,
+            "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "tw-event-1_1.jpg",
+            "images": ["tw-event-1_1.jpg", "tw-event-1_2.jpg"]
+        },
+
+        {
+            "title":"바람의나라",
+            "subtitle": "바린이 나르샤",
+            "id":"event",
+            "url": "http://baram.nexon.com/E190502/Event",
+            "mainDev": true,
+            "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "br-event-2.jpg",
+            "images": ["br-event-2_1.jpg", "br-event-2_2.jpg", "br-event-2_3.jpg"]
+        },
+
+        {
+            "title":"메이플스토리2",
+            "subtitle": "신대륙 크리티아스",
+            "id":"event",
+            "url":"http://maplestory2.nexon.com/events/20181213/CritiasReservation",
+            "mainDev": true,
+            "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "ms2-event-1.jpg",
+            "images": ["ms2-event-1_1.jpg", "ms2-event-1_2.jpg"]
+        },
+
+        {
+            "title": "카트라이더",
+            "subtitle": "마트카트 SHOW",
+            "id": "event",
+            "url": "http://kart.nexon.com/Events/2018/0118/event.aspx",
+            "mainDev": true,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "kr-event-1.jpg",
+            "images": ["kr-event-1_1.jpg"]
+        },
+
+        {
+            "title": "카트라이더",
+            "subtitle": "2018년 듀얼 레이스 리그",
+            "id": "event",
+            "url": "http://kart.nexon.com/league/2018/league2018s3/index.aspx",
+            "mainDev": true,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "kr-league-1.jpg",
+            "images": ["kr-league-1_1.jpg", "kr-league-1_2.jpg", "kr-league-1_3.jpg"]
+        },
+
+        {
+            "title": "카발",
+            "subtitle": "포가튼템플 B3F",
+            "id": "event",
+            "url": "http://cabal.co.kr/Intro/170719_B3F",
+            "mainDev": true,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "cu-2.jpg",
+            "images": ["cu-2_1.jpg", "cu-2_2.jpg", "cu-2_3.jpg"]
+        },
+
+        {
+            "title": "카발2",
+            "subtitle": "가위바위보 삼세판!",
+            "id": "event",
+            "url": "/project/cabal2Event_4",
+            "mainDev": false,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "c2e-4.jpg",
+            "images": ["c2e-4_1.jpg", "c2e-4_2.jpg"]
+        },
+
+        {
+            "title": "카발2",
+            "subtitle": "주사위를 굴려라!",
+            "id": "event",
+            "url": "/project/cabal2Event_3",
+            "mainDev": false,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "c2e-3.jpg",
+            "images": ["c2e-3_1.jpg", "c2e-3_2.jpg"]
+        },
+
+        {
+            "title":"고양이 다방 일본",
+            "subtitle": "App 웹뷰 이벤트",
+            "id":"event",
+            "url": "/project/catcafe_1/",
+            "mainDev": false,
+            "info": ["참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "cat-1.jpg",
+            "images": ["cat-1_1.jpg", "cat-1_2.jpg", "cat-1_3.jpg"]
+        },
+
+        {
+            "title": "팀업",
+            "subtitle": "브랜드 페이지",
+            "id": "event",
+            "url": "/project/TeamUP_v1/",
+            "mainDev": false,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "teamup-1.jpg",
+            "images": ["teamup-1.jpg"]
+        },
+
+        {
+            "title": "알메모",
+            "subtitle": "브랜드 페이지",
+            "id": "event",
+            "url":"<a href=\"/project/ALmemo/\" target=\"_blank\">HTML 페이지 바로가기</a>",
+            "mainDev":false,
+            "info": ["IE7부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
+            "thumbnail": "almemo.jpg",
+            "images": ["almemo.jpg"]
+        }
+    ]
 }
