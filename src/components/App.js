@@ -15,11 +15,12 @@ const App = () => {
   const [active, setActive] = useState({});
   const [work, setWork] = useState(false);
 
-  const img_path = '/portfolio/images/thumbnail/';
-  const html = document.querySelector('html');
-  const body = document.querySelector('body');
+  const img_path = 'http://rongchyo.cafe24.com/resources/images/thumbnail/';
+
 
   const openModal = useCallback((work) => {
+    const html = document.querySelector('html');
+    const body = document.querySelector('body');
     html.style.overflowY = 'hidden';
     body.style.overflowY = 'scroll';
 
@@ -27,6 +28,8 @@ const App = () => {
   }, []);
 
   const closeModal = useCallback(() => {
+    const html = document.querySelector('html');
+    const body = document.querySelector('body');
     html.style.overflowY = '';
     body.style.overflowY = '';
 

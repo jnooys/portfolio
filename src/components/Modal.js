@@ -5,7 +5,7 @@ const Modal = memo(() => {
 
   const { project, work, img_path, closeModal, openModal }  = useContext(PortfolioContext);
 
-  const { title, subtitle, url, mainDev, info, images, pages } = work;
+  const { title, subtitle, url, mainDev, info, images, pages, date } = work;
 
   const moveModal = (e) => {
 
@@ -29,6 +29,7 @@ const Modal = memo(() => {
             <header>
               <h1>{title}</h1>
               <span className="subtitle">{subtitle}</span>
+              <span className="date">{date}</span>
             </header>
             <section>
               <a href={url} target="_blank" className="link">{mainDev ? url : 'HTML페이지 바로가기'}</a>

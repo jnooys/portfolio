@@ -2,10 +2,15 @@
 
 // variables 
 $header_height: 70px;
+$root_size: 18;
 
 // mixin
 @mixin raleway {
   font-family: 'Raleway', sans-serif;
+}
+
+@function rem($size){
+  @return ceil($size / $root_size * 100) / 100+rem; 
 }
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, strong, small, dl, dt, dd, ol, ul, li, fieldset, form, input, button, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
@@ -16,11 +21,14 @@ article, aside, figcaption, figure, video, audio, footer, header, hgroup, menu, 
   display: block;
 }
 
+html {
+  font-size: $root_size+px;
+}
+
 body {
   
   font : {
     family: 'Noto Sans KR', sans-serif;
-    size: 18px;
     weight: 300;
   }
 
@@ -93,7 +101,7 @@ button {
 
   h1 {
     font-weight: 100;
-    font-size: 30px;
+    font-size: rem(30);
     line-height: $header_height;
   }
 
@@ -106,14 +114,11 @@ button {
       display: flex;
       height: $header_height;
       align-items: center;
+      margin: 0 -10px;
     }
 
     li {
       margin: 0 10px;
-
-      &:last-child {
-        margin-right: 0;
-      }
 
       button {
         position: relative;
@@ -151,7 +156,7 @@ main {
 
   h1 {
     @include raleway;
-    font-size: 40px;
+    font-size: rem(40);
     font-weight: 300;
     line-height:1.3;
     letter-spacing: -0.01em;
@@ -167,6 +172,7 @@ main {
   li {
     position: relative;
     word-break: keep-all;
+    box-sizing: border-box;
     flex-basis: 22%;
     overflow: hidden;
     margin: 0 1.5% 3%;
@@ -178,28 +184,41 @@ main {
 
     > div {
       position: absolute;
-      top: 70%;
       left: 0; 
       right: 0;
       bottom: 0;
       background: #fff;
       border-bottom: 1px solid #ccc;
       line-height: 1.2;
-      padding: 4% 4% 0;      
+      padding: 5% 4%;      
     }
 
-    span {
-      display: inline-block;
+    .info {
+      position: relative;
       line-height: 1.2;
-      padding: 1%;
+
+      span {
+        display: block;
+      }
     }
 
     .title {
-      font-size: 28px;
+      position: relative;
+      font-size: rem(28);
     }
 
     .subtitle {
       color: #555;
+      margin-top:2%;
+    }
+
+    .date {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      font-size: rem(16);
+      font-weight: 100;
+      @include raleway;
     }
 
     .anchor {
@@ -216,7 +235,7 @@ main {
         text-align: left;
         @include raleway;
         color: #fff;
-        font-size: 24px;
+        font-size: rem(24);
         font-weight: bold;
         line-height: 30px;
 
@@ -227,7 +246,7 @@ main {
           left: 0;
           width: 100%;
           height: 1px;
-          background: rgba(255, 255, 255, 0.5);
+          background: rgba(255, 255, 255, 0.7);
         }
         
         &:first-child {
@@ -252,8 +271,11 @@ main {
         display: block;
       }
 
-      span {
-        background: #fff;
+      .info {
+        
+        span {
+          color: #fff;
+        }
       }
     }
   }
@@ -314,7 +336,7 @@ footer {
     }
 
     &.prev {
-      left: 10%;
+      left: 0;
 
       span {
         left: 30px;
@@ -334,7 +356,7 @@ footer {
     }
 
     &.next {
-      right: 10%;
+      right: 0;
 
       span {
         right: 30px;
@@ -366,8 +388,10 @@ footer {
   }
 
   header {
+    position: relative;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 2.5%;
+    line-height: 1.4;
+    padding-bottom: 1.5%;
     margin-bottom: 3%;
   }
 
@@ -377,7 +401,7 @@ footer {
 
   h1 {
     font: {
-      size: 38px;
+      size: rem(38);
       weight: 300;
     }
     margin-right: 0.7%;
@@ -385,7 +409,16 @@ footer {
 
   .subtitle {
     color: #555;
-    font-size: 24px;
+    font-size: rem(24);
+  }
+
+  .date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include raleway;
+    font-weight: 100;
+    margin-bottom: 2%;
   }
 
   section {
@@ -445,6 +478,7 @@ footer {
 
   .link {
     color: #00A8FF;
+    word-break: break-all;
 
     &:hover {
       text-decoration: underline;
@@ -458,7 +492,7 @@ footer {
     li {
       position: relative;
       float: left;
-      font-size: 15px;
+      font-size: rem(15);
       padding-left: 5px;
       margin-right: 1%;
 
@@ -486,9 +520,15 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50px;
-    height: 50px;
-    margin: 3% 3% 0 0;
+    width: 10%;
+    max-width: 50px;
+    margin: 1.5% 1.5% 0 0;
+
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
     
     span {
       position: absolute;
@@ -524,4 +564,78 @@ footer {
 
 @keyframes loadingspin {
   to { -webkit-transform: rotate(360deg); }
+}
+
+@media screen and (min-width:1200px) and (max-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    li {
+      flex-basis: 30.33%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+
+  #modal {
+    .move {
+      display: none;
+    }
+  } 
+}
+
+@media screen and (max-width: 700px) {
+
+  main {
+    li {
+      flex-basis: 47%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  html {
+    font-size: 15px;
+  }
+
+  #header {
+    height: 100px;
+
+    nav {
+      top: 50px;
+      left: 0;
+    }
+  }
+
+  main {
+    li {
+      .title {
+        font-size: rem(20);
+      }
+    }
+  }
+
+  #modal {
+
+    header {
+
+      h1 {
+        font-size: rem(30);
+      }   
+
+      .subtitle {
+        display: block;
+        font-size: rem(18);
+      }
+    }
+  }
 }
