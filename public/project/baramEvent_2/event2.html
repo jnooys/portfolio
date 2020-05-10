@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8">
+<title>바람의나라</title>
+<link rel="stylesheet" href="http://js.nx.com/s3/Game/baram/event/2019/0502_gm/style.css">
+<script src="http://js.nx.com/s1/Game/baram/renewal/jquery-latest.min.js" ></script>
+<script src="http://js.nx.com/s1/Game/baram/event/2019/0502_gm/index.js"></script>
+<style>
+    /* font */
+    @font-face {
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight:400;
+        src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+            url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+            url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight:800;
+        src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),
+            url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),
+            url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight:100;
+        src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+            url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+            url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+    }
+</style>
+</head>
+
+<body>  <!-- 네이버 페이지일때 body에 class="naver" 클래스 추가 -->
+<script src="https://rs.nxfs.nexon.com/common/js/gnb.min.js" data-gamecode="131072" data-ispublicbanner="true"></script>
+
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <h1><a href="/Home/Index">바람의나라</a></h1>
+        <div id="nav">
+            <ul>
+                <li><a href="./event1.html"><span class="txt">BJ 바린이 이벤트 안내</span><span class="blt"></span></a></li>
+                <li class="on"><a href="./event2.html"><span class="txt">운영자 생방송 안내</span><span class="blt"></span></a></li>
+            </ul>
+        </div>
+        <div class="util">
+            <ul>
+                <li class="btn_h"><a href="/Home/Index"><span class="txt">홈페이지</span><span class="bubble"></span></a></li>
+                <li class="btn_c"><a href="javascript:;" onclick="fnTodayChk();"><span class="txt">오늘 하루 보지않기</span><span class="bubble"></span></a></li>
+            </ul>
+            <button type="button" class="btn_start" onclick="baram.gameStart(null, 'false')">게임시작</button>
+        </div>
+    </div>
+    <!--//header-->
+    
+    <!--intro-->
+    <div class="section intro" id="intro">
+        <div class="container">
+            <div class="blind">
+                <span>우리도 한다. 신규 BJ</span>
+                <h2>운영자 생방송</h2>
+                <p>함께 즐기는 바람의나라 운영진도 빠질 수 없겠죠? 즐거운 생방송 보고 다양한 이벤트에 참여하세요~!</p>
+            </div>
+            <div class="content_wrap title_wrap">
+                <span class="subtitle"></span>
+                <div class="_h1">
+                    <span class="back"></span>
+                    <span class="front"></span>
+                </div>
+                <div class="_h2">
+                    <span class="back"></span>
+                    <span class="front"></span>
+                </div>
+            </div>
+            
+            <div class="content_wrap object_wrap">
+                <span class="cloud _c1"></span>
+                <span class="cloud _c2"></span>
+                <div class="monster _m1">
+                    <span class="bg"></span>
+                    <span class="animal"></span>
+                </div>
+                <div class="monster _m2">
+                    <span class="bg"></span>
+                    <span class="animal"></span>
+                </div>
+                <span class="badge _b1"></span>
+                <span class="badge _b2"></span>
+                <span class="badge _b3"></span>
+                <span class="badge _b4"></span>
+                <span class="badge _b5"></span>
+                <span class="badge _b6"></span>
+                
+                <div class="gm">
+                    <span class="body"></span>
+                    <span class="bubble"></span>
+                </div>
+            </div>
+            
+            <div class="content_wrap twinkle_wrap">
+                <span class="t51 _t1"></span>
+                <span class="t96 _t2"></span>
+                <span class="t51 _t3"></span>
+                <span class="t56 _t4"></span>
+                <span class="t61 _t5"></span>
+                <span class="t75 _t6"></span>
+                <span class="t96 _t7"></span>
+                <span class="t51 _t8"></span>
+                <span class="t61 _t9"></span>
+                <span class="t96 _t10"></span>
+                <span class="t42 _t11"></span>
+            </div>
+            
+            <!--생방송 영역-->
+            <div class="video_wrap">
+                <ul class="tab_menu">
+                    <!--활성화된 메뉴 li에 클래스 on 추가-->
+                    <li class="may10 on">
+                        <a href="" class="play"><span class="btn"><span class="front"></span></span><span class="txt">5월 10일 오후 7시</span></a>
+                        <a href="https://www.twitch.tv/nexon" class="link" target="_blank">방송 보기</a>
+                    </li>
+                    <li class="may11">
+                        <a href="" class="play"><span class="btn"><span class="front"></span></span><span class="txt">5월 11일 오후 7시</span></a>
+                        <a href="https://www.twitch.tv/nexon" class="link" target="_blank">방송 보기</a>
+                    </li>
+                </ul>
+                <div class="tab_content">
+                    <!--생방송 전-->
+                    <div class="video_default">
+                        <span class="noise"></span>
+                        <span class="txt may10 on">5월 10일 오후 7시 함께 하는 생방송!</span><!--활성화된 텍스트 span에 클래스 on 추가-->
+                        <span class="txt may11">5월 11일 오후 7시 함께 하는 생방송!</span>
+                        <span class="bezel"></span>
+                    </div>
+                    
+                    <!--영상 있을 경우 div.video_frame에 클래스 onair 추가-->
+                    <div class="video_frame">
+                        <iframe src="" frameborder="0" width="871" height="493"></iframe><!--동영상 iframe-->
+                    </div>
+                    <script>
+                        // 생방송 or 다시보기 영상 주소 배열 값으로 저장
+                        var videoSrc = [];
+                    </script>
+                </div>
+            </div>
+            <!--//생방송 영역-->
+            
+            <span class="scroll"><span class="lever"></span></span>
+        </div>
+        
+        <a href="./event3.html" class="banner" target="_blank"><span class="back">역대급 성장혜택으로 날아오르다. 바린이 나르샤</span><span class="front"><span class="arrow"></span><span class="line"></span></span></a>
+        <p class="copyright">© 1996 NEXON Corporation All Rights Reserved.</p>
+    </div>
+    <!--//intro-->
+    
+    <div class="section sub" id="sub">
+        <!--sub1-->
+        <div class="section sub1">
+            <div class="container">
+                <span class="num">1</span>
+                <div class="text_wrap">
+                    <span class="event">이벤트 하나!</span>
+                    <h3>100% 당첨 쿠폰 이벤트</h3>
+                    <div class="desc">
+                        <p>생방송 도중 공개되는 쿠폰을 입력하면 모든 시청자 100% 선물 제공!</p>
+                        <p>선물 : 물품보관함 확장 (1칸)</p>
+                    </div>
+                </div>
+                <div class="object_wrap">
+                    <span class="_c1"></span>
+                    <span class="_c2"></span>
+                    <span class="_c3"></span>
+                </div>
+            </div>
+        </div>
+        <!--//sub1-->
+        
+        <!--sub2-->
+        <div class="section sub2">
+            <div class="container">
+                <span class="num">2</span>
+                <div class="text_wrap">
+                    <span class="event">이벤트 둘!</span>
+                    <h3>드립력 뿜뿜</h3>
+                    <div class="desc">
+                        <p>생방송 도중 센스 있는 댓글, 착한 응원을 남겨 주신 분들께 실시간 넥슨캐시 쿠폰 제공!</p>
+                        <p>선물 : 넥슨캐시 쿠폰 5,000원 / 트위치 쪽지로 발송 됩니다.</p>
+                    </div>
+                </div>
+                <div class="object_wrap">
+                    <span class="coin _c1"></span>
+                    <span class="coin _c2"></span>
+                    <span class="coin _c3"></span>
+                    <span class="zzz"></span>
+                </div>
+            </div>
+        </div>
+        <!--sub2-->
+        
+        <!--sub3-->
+        <div class="section sub3">
+            <div class="container">
+                <span class="num">3</span>
+                <div class="text_wrap">
+                    <span class="event">이벤트 셋!</span>
+                    <h3>제발 함께 놀아주세요…!</h3>
+                    <p class="desc">생방송에서 진행 되는 미니게임에 참가하시면 다양한 선물을 드려요~ (넥슨 캐시 보상은 방송 종료 후 10일 이내에 참여한 넥슨ID로 지급 됩니다.)</p>
+                    <ul class="parallax">
+                        <li class="_l1">왕자의 전장</li>
+                        <li class="_l2">숨바꼭질</li>
+                        <li class="_l3">OX퀴즈</li>
+                        <li class="_l4">소수의 선택</li>
+                    </ul>
+                </div>
+                <div class="object_wrap">
+                    <span class="money _m1"></span>
+                    <span class="money _m2"></span>
+                    <span class="money _m3"></span>
+                    <span class="console"></span>
+                </div>  
+            </div>
+        </div>
+        <!--sub3-->
+    </div>
+    <!--//sub-->
+</div>
+</body>
+</html>

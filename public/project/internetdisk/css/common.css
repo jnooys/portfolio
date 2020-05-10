@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/*reset*/
+html,body{height:100%}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,a,address,em,img,strong,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,textarea,table,caption,tbody,tfoot,thead,tr,th,td,video,pre,input,button,textarea,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;margin:0;padding:0}
+body{width:100%;font-family:"돋움","dotum","굴림",Gulim,Helvetica,sans-serif;font-size:13px;color:#333;line-height:1;-webkit-text-size-adjust:none}
+table{border-collapse:separate;border-spacing:0}
+input,textarea,select,button,label{font-size:inherit;font-family:inherit;outline:0;border:0;color:inherit}
+address,em,i{font-style:normal}
+a, img{vertical-align:top;border:0}
+ol,ul{list-style:none}
+a,a:link{color:inherit;text-decoration:none;cursor:pointer}
+.ls0{letter-spacing:0}
+legend, .blind{position:absolute;left:-9999px;top:-9999px;font-size:0;line-height:0}
+.trans{color:transparent;font-size:0}
+
+/*공통*/
+.wrap{position:relative;width:100%;min-width:320px;min-height:100%;background-color:#F3F5F7}
+.wrap.on{height:100%;overflow:hidden}
+.wrap .content{padding-top:40px}
+.state.apply{color:#1755a1}
+.state.none{color:#f15b33}
+.state.approval{color:#1c963b}
+.state.done{color:#6f7073}
+
+/*로그인 , 비밀번호 찾기*/
+.field{height:100%;min-height:400px}
+.field .field_wrap{position:absolute;top:50%;left:0;width:100%;margin-top:-170px}
+.field h1{text-align:center;line-height:60px}
+.field h1, .field .intro_pwfind{height:60px;margin-bottom:33px}
+.field h1 img{vertical-align:middle;width:150px;max-height:30px}
+.field .field_box{min-height:217px;padding:0 10px}
+.field .field_box .ipt_wrap{position:relative;text-align:center;background-color:#fff;border:1px solid #E3E5EC;margin-bottom:10px;padding:0 15px}
+.field .field_box .ipt_wrap label{position:absolute;left:15px;top:15px;color:#a7a7a7}
+.field .field_box .ipt_wrap input{width:100%;height:43px;border-radius:0;font-size:13px}
+.field .field_box .field_btn{padding-top:15px}
+.field .field_box .field_btn input{display:block;width:100%;height:56px;background-color:#3C475A;color:#fff;font-size:20px;-webkit-appearance:none;border-radius:0}
+.field .field_box .f_option{position:relative;height:20px;margin-top:16px}
+.field .field_box .f_option label{display:inline-block;height:20px;overflow:hidden;line-height:21px;background:url("../img/spr_checkbox.gif") no-repeat;background-size:20px auto;padding-left:26px}
+.field .field_box .f_option label.checked{background-position:0 100%}
+.field .field_box .f_option .find_pw{color:#265dc6;position:absolute;top:0;right:0;line-height:21px}
+.field .field_wrap > p{font-size:22px;color:#abaeb6;text-align:center;letter-spacing:-1px;line-height:1.4}
+.field .intro_pwfind span, .field .field_wrap > p .blue{color:#3c475a}
+.field .intro_verify{margin-bottom:15px}
+.field .intro_verify .small{font-size:18px}
+
+.field .lang{position:absolute;top:10px;right:10px}
+.field .lang select{vertical-align:top;width:85px;height:27px;background:#fff url("../img/blt_select.png") 100% 50% no-repeat;background-size:18px auto;-webkit-appearance:none;border-radius:0;border:1px solid #ccc;font-size:11px;line-height:26px;padding-left:8px}
+.field .btn_btm{bottom:10px}
+.btn_btm{position:absolute;left:0;width:100%;text-align:center;font-size:0}
+.btn_btm a{display:inline-block !important;width:83px;height:29px;background-color:#fff;border:1px solid #CBCBCB;border-radius:2px;font-size:13px;color:#333;line-height:29px}
+
+/*3회 이상 잘못 입력하셨습니다.*/
+.field_3{min-height:550px}
+.field .verify_wrap{margin-top:-215px}
+.field .ver_area{position:relative;width:131px;margin:0 auto 20px}
+.field .ver_area .vimg{width:129px;border:1px solid #ccc}
+.field .ver_area .vimg img{width:100%}
+.field .ver_area .refresh{position:absolute;bottom:0;left:136px;width:60px;color:#265dc6}
+
+/*오래된 비밀번호를 변경하세요*/
+.intro_pwchange{margin-bottom:45px}
+.field .change_wrap .field_btn{display:table;width:100%;table-layout:fixed}
+.field .change_wrap .field_btn span{display:table-cell}
+.field .change_wrap .field_btn .space{width:10px}
+.field .change_wrap .field_btn input, .field .change_wrap .field_btn a{font-size:16px}
+.field .change_wrap .field_btn a{display:block;width:100%;height:56px;line-height:56px;color:#fff;text-align:center;background-color:#949dac}
+
+/*헤더*/
+.header{position:fixed;top:0;left:0;width:100%;height:40px;background:#3C475A;z-index:10}
+.header > h2{color:#fff;line-height:40px;text-align:center;font-size:18px}
+.header .btn_header a{display:block}
+.header .btn_header > a{position:absolute;top:8px;left:9px;width:24px;height:24px}
+.header .btn_list{background:url("../img/btn_list.gif") 50% 50% no-repeat;background-size:17px auto}
+.header .btn_header .bg{display:none;position:fixed;width:100%;height:100%;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.7)}
+.header .gnb{position:fixed;top:0;left:-264px;height:100%;background:#fff;width:264px}
+.header .btn_header .bg.on,.header .btn_header .gnb .close.on{display:block}
+.header .btn_header .gnb h1{background:#F3F5F7;height:64px;line-height:62px;border-bottom:1px solid #F0F1F2;padding-left:17px}
+.header .btn_header .gnb h1 span{display:inline-block;font-size:19px;background:url("../img/bg_h1.gif") 0 50% no-repeat;background-size:27px auto;padding-left:35px}
+.header .btn_header .gnb li a{height:64px;line-height:64px;font-size:13px;border-bottom:1px solid #F9F9F9;padding-left:23px}
+.header .btn_header .gnb li a span{display:inline-block;height:21px;background:url("../img/spr_gnb_list.gif") no-repeat;background-size:21px auto;line-height:20px;font-size:15px;padding-left:28px}
+.header .btn_header .gnb li.gnb2 a span{background-position:0 -33px}
+.header .btn_header .gnb li.gnb3 a span{background-position:0 -69px}
+.header .btn_header .gnb .close{display:none;position:absolute;top:23px;right:-37px;width:17px;height:17px;background:url("../img/btn_gnb_close.png") no-repeat;background-size:17px auto}
+.header .btn_header .btn_prev{background:url("../img/btn_prev.gif") 2px 50% no-repeat;background-size:18px auto}
+.header .gnb .btn_btm{bottom:25px}
+
+
+/*리스트 공통*/
+.list_wrap{padding:11px 10px 14px}
+.list_wrap li{border:1px solid #EAEDF0;background-color:#fff;margin-bottom:5px}
+.list_wrap li a{position:relative;display:block;padding:11px 10px 10px}
+.list_wrap li dl{font-size:0}
+.list_wrap li dt{font-size:15px;margin-bottom:10px}
+.list_wrap li dt .state{font-size:12px;padding-left:5px}
+.list_wrap li dt .site{color:#1755a1}
+.list_wrap li dd{vertical-align:middle;display:inline-block;color:#a7a7a7;font-size:12px}
+.list_wrap li a dl dd.date{display:block;font-size:11px;margin-top:9px}
+.list_wrap li a dl dd.diskname{background:url("../img/bg_diskname.gif") 0 1px no-repeat;background-size:15px auto;max-width:47%;text-overflow:ellipsis;overflow:hidden;word-break:break-all;white-space:nowrap;padding-left:20px}
+.list_wrap li a dl dd.uname:before{content:"";vertical-align:top;display:inline-block;width:1px;height:12px;background:#C7C7C7;margin:0 6px}
+.list_wrap li a dl dd.state{position:absolute;top:15px;right:15px}
+p.pager{height:20px;text-align:center;font-size:0;padding-top:5px}
+p.pager .move, p.pager strong{display:inline-block}
+p.pager .move{width:31px;height:20px;background:url("../img/spr_btn_pager.png") no-repeat;background-size:62px auto}
+p.pager .move.next{background-position:100% 0}
+p.pager strong{font-size:12px;height:20px;line-height:20px;color:#a7a7a7;padding:0 12px}
+p.pager strong span.now{color:#333}
+
+/*리스트 없을 때*/
+.no_list{position:absolute;top:50%;left:50%;width:320px;background:url("../img/bg_nolist.gif") 50% 0 no-repeat;background-size:89px auto;color:#abaeb6;font-size:22px;text-align:center;letter-spacing:-1px;padding-top:110px;margin:-67px 0 0 -160px}
+
+
+/*상세 보기 페이지*/
+.wrap.view{background-color:#fff}
+.wrap.view .view_wrap{padding:14px 10px 40px}
+.wrap.view .view_wrap h3{font-size:12px;color:#1755a1;letter-spacing:-1px;margin:24px 0 9px}
+.wrap.view .view_wrap h3:first-of-type{margin-top:0}
+.wrap.view table{width:100%;border-top:1px solid #727880;border-bottom:1px solid #727880}
+.view_wrap table th, .view_wrap table td{vertical-align:top;border-bottom:1px solid #EEEFF0;line-height:17px;padding:6px 0}
+.view_wrap table tr:last-child th, .view_wrap table tr:last-child td{border-bottom:0 none}
+.view_wrap table th{width:84px;text-align:left;font-size:12px;color:#aeb2b6;letter-spacing:-1px;padding-left:5px}
+.view_wrap table td{position:relative;font-size:13px;word-break:break-all;padding-right:5px}
+.view_wrap table.tb_apply .td_file div{position:relative;padding-right:50px}
+.view_wrap table.tb_apply .td_file span{display:block}
+.view_wrap table.tb_apply .td_file span.file_name{font-size:14px}
+.view_wrap table.tb_apply .td_file .size{color:#1755a1;padding:2px 0 4px}
+.view_wrap table.tb_apply .td_file .btn_file{position:absolute;top:4px;right:5px;width:31px;height:31px;background-size:31px auto !important}
+.view_wrap table.tb_apply .td_file .btn_download{background:url("../img/btn_download.gif") no-repeat}
+.view_wrap table.tb_apply .td_file .btn_view{background:url("../img/btn_file-view.gif") no-repeat}
+.view_wrap table.tb_sign .td_signer .sign_co{font-size:12px;margin-bottom:3px}
+.view_wrap table.tb_sign .td_signer dd .sign_date{color:#a7a7a7;font-size:11px;padding-left:7px}
+
+
+/*미결재내역 보기*/
+.view_wrap .approve_form .sign_txt{background-color:#F8F8F9;font-size:14px;margin-bottom:5px}
+.view_wrap .approve_form .sign_txt .txt_wrap{position:relative;display:block;border-bottom:1px solid #ECEFF3;padding:10px}
+.view_wrap .approve_form .sign_txt .txt_wrap label{position:absolute;top:10px;left:0;width:100%;line-height:19px;color:#aeb2b6;text-align:center}
+.view_wrap .approve_form .sign_txt .txt_wrap textarea{width:100%;min-height:29px;background-color:#F8F8F9;line-height:19px;resize:none;overflow:hidden;border-radius:0;outline:0}
+.view_wrap .approve_form .sign_txt dd{width:100%;text-align:center;padding:8px 0}
+.view_wrap .approve_form .sign_btn{display:table;width:100%}
+.view_wrap .approve_form .sign_btn a, .view_wrap .approve_form .sign_btn span{display:table-cell;height:43px}
+.view_wrap .approve_form .sign_btn span.space{width:10px}
+.view_wrap .approve_form .sign_btn a{line-height:43px;color:#fff;text-align:center;font-size:15px}
+.view_wrap .approve_form .sign_btn a.btn_sign{background-color:#1755A1}
+.view_wrap .approve_form .sign_btn a.btn_reject{background-color:#F15B33}

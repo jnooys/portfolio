@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+/* layout */
+.content_wrap{width:940px}
+.admin_wrap{padding-top:44px}
+.admin_wrap .user_wrap{;border-top:1px solid #a5a5a5;margin-top:49px;padding-top:34px}
+.admin_wrap .user_wrap.al_wrap{border-top:0 none;padding-top:0}
+
+/* header */
+.header{background:#00a8ff;border-bottom:1px solid #00a8ff}
+.header h1 a{background:url("../img/manage/logo_teamup-white-beta.png") no-repeat}
+.header h1 a,.header #logo_teamup{fill:#fff;background-color:#00a8ff}
+.header .util_menu a{color:#fff}
+.header .util_menu .btn_header{border:1px solid #fff}
+
+/* footer */
+.footer .content_box{border-top:1px solid #dbdbdb}
+.footer .logo #logo_estsoft{background:#fff}
+
+/* common */
+.admin_wrap h4{font-size:16px}
+.select.sel_m, .ipt_txt{border:1px solid #dbdbdb;border-radius:2px}
+.select.sel_m .s_default{background:url("../img/manage/spr_blt.png") no-repeat}
+.select.sel_m ul{left:-1px;border:1px solid #a5a5a5;border-radius:2px;}
+.select.sel_m li{border-top:1px solid #dbdbdb}
+.select.sel_m li:first-child{border-top:0 none}
+.select.sel_m.show{border-color:#a5a5a5}
+.ipt_txt{height:28px;line-height:27px;font-size:13px;*margin-top:-1px}
+.ipt_txt::-webkit-input-placeholder{color:#adadad}
+.ipt_txt:-moz-placeholder,.ipt_txt::-moz-placeholder{color:#adadad}
+.ipt_txt:-ms-input-placeholder{color:#adadad !important}
+.focus .ipt_txt, .ipt_txt:focus{outline:0;border-color:#a5a5a5}
+.input_wrap{position:relative}
+.input_wrap .ipt_txt{color:#262626;padding:0 28px 0 7px}
+.input_wrap.focus .btn_search{display:none}
+.input_wrap.focus .del{display:block}
+.input_wrap .del{display:none;position:absolute;right:2px;top:1px;width:24px;height:28px;background:#fff url("../img/manage/spr_blt.png") -24px -86px no-repeat;border-radius:0 2px 2px 0}
+.input_wrap .btn_search{position:absolute;top:1px;right:1px;width:25px;height:28px;text-indent:-9999px;background:#fff url("../img/manage/spr_blt.png") 4px -87px no-repeat;border:0 none;border-radius:0 2px 2px 0;cursor:pointer}
+.user_box a{display:block;height:47px;font-size:0;border-top:1px solid #e9e9e9;padding-left:10px}
+.user_box a .thumb_s{height:34px;margin:7px 0}
+.user_box a .thumb_s img{width:34px;margin-right:10px}
+.user_box a:hover{text-decoration:none;background:#f8f8f8}
+.user_box div:first-child a, .part_box div:first-child a{border-top:0 none !important}
+.user_box a strong, .user_box a dt{font-weight:normal;display:inline-block;*display:inline;*zoom:1;font-size:14px;vertical-align:middle;color:#262626;line-height:18px}
+.user_box a strong, .user_box a dt, .user_box a strong, .user_box a span{overflow:hidden;text-overflow:ellipsis;word-break:break-all;white-space:nowrap}
+.user_box a div{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}
+.user_box a .part{display:block;height;14px;font-size:12px;color:#a5a5a5;line-height:16px}
+.user_box a strong span{color:#00a8ff}
+.ba_wrap{position:relative;z-index:1}
+.ba_wrap ul{display:none;position:absolute;top:31px;left:0;border:1px solid #a5a5a5;background:#fff;;border-radius:2px;vertical-align:top}
+.ba_wrap.show .btn30{border-color:#a5a5a5}
+.ba_wrap.show ul{display:block}
+.ba_wrap li{position:relative;width:100%;height:29px;font-size:13px;line-height:29px;border-bottom:1px solid #dbdbdb;color:#262626}
+.ba_wrap li:last-child{border-bottom:0 none}
+.ba_wrap li a{display:block;color:#262626;padding:0 8px}
+.ba_wrap li a:hover{text-decoration:none;background:#f8f8f8}
+.state.red{color:#f13a6d}
+.state.blue{color:#00a8ff}
+.input_wrap .keyword{display:none;position:absolute;top:31px;left:0;border:1px solid #a5a5a5;border-radius:2px;background:#fff;z-index:2;font-size:0}
+
+/* btn */
+.btn30{border-radius:2px;height:28px;line-height:27px;font-size:13px;text-align:center;min-width:38px;padding:0 10px}
+.userinfo .btn40.btn_white,.btn30.btn_white{border-color:#bfbfbf;background:#fff;color:#262626}
+.btn34.btn_white{border:1px solid #dbdbdb}
+.btn30.bico_30{min-width:10px}
+.btn30 span{height:100%;display:inline-block;*display:inline;*zoom:1;vertical-align:top;background:url("../img/manage/spr_blt.png") no-repeat}
+.btn30.btn_icon{min-width:10px}
+.btn30.btn_icon span{display:block;width:10px;text-indent:-9999px}
+.btn30.btn_icon span{padding:0}
+.btn30 .add{background-position:0 -114px;padding-left:16px}
+.btn30 .del{background-position:0 -137px}
+.btn30 .arrow{background-position:100% 11px;padding-right:13px;margin:0 6px}
+.btn30.btn_approve{margin-right:5px}
+.btn34{width:90px;height:32px;line-height:31px;font-size:14px;border-radius:20px}
+
+/* admin header */
+.admin_wrap .admin_header{position:relative;height:40px;margin-bottom:28px;z-index:10}
+.admin_wrap h2{font-size:24px;line-height:40px}
+.admin_wrap .team_list{position:absolute;right:0;top:0;height:40px;z-index:1}
+.admin_wrap .team_list dl{height:100%}
+.admin_wrap .team_list dt, .admin_wrap .team_list dd{float:left}
+.admin_wrap .team_list dt{padding-right:19px;line-height:40px}
+.admin_wrap .team_list dd .sel_m{width:218px;height:38px}
+.admin_wrap .team_list dd .sel_m ul{top:42px;max-height:311px}
+.admin_wrap .team_list dd .sel_m .s_default{background-position:-200px 16px;padding-right:42px}
+.admin_wrap .team_list dd .sel_m.show .s_default{background-position:-200px -38px}
+.admin_wrap .team_list dd a{line-height:38px;padding-left:15px}
+.admin_wrap .team_list dd li a{padding-right:15px}
+
+/* tab */
+.admin_wrap .info_content{border-top:2px solid #262626}
+.admin_wrap .info_content .i_tab{position:relative;*zoom:1;border-left:1px solid #e9e9e9;border-bottom:1px solid #a5a5a5;border-right:1px solid #e9e9e9}
+.admin_wrap .info_content .i_tab:after{content:"";display:block;clear:both}
+.admin_wrap .info_content .i_tab li{position:relative;float:left;width:188px;height:47px}
+.admin_wrap .info_content .i_tab li a{display:block}
+.admin_wrap .info_content .i_tab li .subMenu{height:100%;line-height:47px;background:#fff;color:#a5a5a5;border-right:1px solid #e9e9e9;text-align:center;overflow:hidden}
+.admin_wrap .info_content .i_tab .ConnectUs .subMenu{background:url("../img/manage/spr_blt.png") 100% -83px no-repeat}
+.admin_wrap .info_content .i_tab li .subMenu:hover{text-decoration:none}
+.admin_wrap .info_content .i_tab li.on .subMenu{font-size:16px;border-right-color:#a5a5a5;color:#262626;border-left:1px solid #a5a5a5;padding-bottom:1px;margin-left:-1px}
+.admin_wrap .info_content .i_tab li .depth2{display:none}
+.admin_wrap .info_content .i_tab li.depth .depth2{position:absolute;top:48px;left:50%;width:940px;height:49px;white-space:nowrap;font-size:0;margin-left:-470px;text-align:center}
+.admin_wrap .info_content .i_tab li.depth .depth2 ul{padding-top:15px}
+.admin_wrap .info_content .i_tab li li{float:none;width:auto;height:auto;display:inline-block;*display:inline;*zoom:1;vertical-align:top;font-size:14px;border-bottom:0 none;padding:0 15px}
+.admin_wrap .info_content .i_tab li li a{line-height:18px}
+.admin_wrap .info_content .i_tab li.ConnectUs{width:187px;margin-right:-1px}
+.admin_wrap .info_content .i_tab li.on li .on{color:#00a8ff}
+.admin_wrap .info_content .i_tab li.depth.on .depth2{display:block}
+
+/* sub header */
+.user_wrap .title_wrap{position:relative;height:30px;z-index:2;margin-bottom:15px}
+.user_wrap h3{float:left;font-size:18px;line-height:30px}
+.user_wrap h3 span{color:#4b4b4b;font-size:13px;vertical-align:middle;padding-left:8px}
+.user_wrap .btn_umanage{float:left;padding-left:9px}
+.user_wrap .btn_umanage .btn_aprrove{margin-right:5px}
+.user_search{position:absolute;top:0;right:0;font-size:0;*zoom:1;height:31px;white-space:nowrap}
+.user_search:after{content:"";display:block;clear:both}
+.user_search .input_wrap, .user_search .btn_wrap{float:left}
+.user_search .input_wrap{width:193px}
+.user_search .input_wrap .ipt_txt{width:156px}
+.user_search .input_wrap .user_box{width:191px}
+.user_search .btn_wrap{padding-left:5px}
+.user_search .btn_wrap a{margin-left:5px}
+
+/* table */
+.table_wrap table{width:100%;table-layout:fixed}
+.table_wrap .checked td{background:#edf8ff}
+.table_wrap tr:hover{z-index:1}
+.table_wrap tr:hover td{background:#F3F3F3}
+.table_wrap th{height:35px;border-top:1px solid #CFCFCF;color:#a5a5a5;border-bottom:1px solid #DDDFE3;font-weight:normal}
+.table_wrap td{position:relative;overflow:hidden;height:48px;border-bottom:1px solid #F1F1F1;text-overflow:ellipsis;white-space:nowrap;word-break:break-all;text-align:center}
+.table_wrap th.tb_1{width:56px}
+.table_wrap .tb_2{text-align:left}
+.table_wrap th.tb_2{width:229px;padding-left:63px}
+.table_wrap td.tb_2{font-size:0;overflow:visible;padding-left:9px}
+.table_wrap tr .checkbox{display:block;margin:0 auto}
+.table_wrap td .thumb_s{width:34px;height:34px;margin:7px 20px 7px 0}
+.table_wrap td a *{cursor:pointer}
+.table_wrap td a:hover,.table_wrap td a:hover *{text-decoration:none}
+.table_wrap td .name{display:inline-block;*display:inline;*zoom:1;height:48px;line-height:48px;font-size:14px;font-weight:normal;max-width:66%;vertical-align:middle;overflow:hidden;text-overflow:ellipsis;word-break:break-all;white-space:nowrap}
+.table_wrap td .name span{color:#3c77d6}
+.table_wrap td .icon_admin{height:20px;display:inline-block;*display:inline;*zoom:1;vertical-align:middle;color:#fff;font-size:12px;background:#19b1ff;border-radius:2px;line-height:20px;margin-left:10px;font-size:12px;padding:0 6px}
+.admin_wrap .page_btn{border-top:1px solid #dbdbdb;margin-top:-1px;padding:20px 0 50px}
+
+.al_wrap .table_wrap th.tb_3,.table_wrap th.tb_4{width:166px}
+.al_wrap .table_wrap th.tb_5{width:130px}
+.al_wrap .table_wrap td strong.name{max-width:53%}
+.applicant_wrap .table_wrap th.tb_3, .applicant_wrap .table_wrap th.tb_6{width:198px}
+.stopped_wrap .table_wrap th.tb_3{width:150px}
+.stopped_wrap .table_wrap th.tb_4, .stopped_wrap .table_wrap th.tb_5{width:146px}
+
+/*group tree*/
+.idTree, .mpop .group_box, .mpop .added_box{position:relative;overflow-y:auto}
+.idTree ul{font-size:0;padding-top:6px}
+.idTree li{position:relative}
+.idTree li ul li{margin-left:13px}
+.idTree li ul{padding:0}
+.idTree li .info{position:relative;display:block;min-height:23px;_height:23px}
+.idTree li .info a{cursor:pointer}
+.idTree li a:hover{text-decoration:none}
+.idTree li .info .expand{position:absolute;top:0;left:0;width:9px;height:23px;background:#fff url("../img/manage/spr_icon_tree.png") no-repeat;z-index:1}
+.idTree li .info .expand.close{background-position:0 -23px}
+.idTree li .info .hover,.idTree li .info .name:hover{background:#F3F3F3}
+.idTree li .info .selected{background:#edf8ff}
+.idTree li .info .name{display:block;font-size:13px;line-height:23px;vertical-align:middle;word-break:break-all;white-space:nowrap;min-height:23px;_height:23px;overflow:hidden;text-overflow:ellipsis;padding-left:3px;margin-left:9px}
+.idTree li .info .name .nm{color:#262626}
+.idTree li .thumb_s{width:19px;height:19px;margin:2px 4px 2px 0}
+.idTree li .thumb_s img{width:19px;height:19px}
+.idTree li .state{color:#a1a7af;font-size:11px;padding-left:4px}
+
+/* treebox */
+.admin_wrap .tree_table{*zoom:1;margin-bottom:80px}
+.admin_wrap .tree_table:after{content:"";display:block;clear:both}
+.tree_table .tree_wrap, .tree_table .table_wrap{position:relative;float:left;min-height:683px}
+.tree_table h4{line-height:20px;min-height:20px;padding:20px 0}
+.tree_table .table_wrap h4{margin-right:225px}
+.ba_wrap.user_mg li{min-width:138px}
+.tree_table .tree_wrap{width:298px;border:1px solid #dbdbdb;margin-right:20px}
+.tree_table .tree_wrap h4{border-bottom:1px solid #dbdbdb;padding-left:20px}
+.tree_table .tree_wrap .btn30{position:absolute;top:15px;right:19px}
+.tree_table .tree_wrap .btnNoGroupUser{display:block;width:100%;height:39px;text-align:center;line-height:39px;border-top:1px solid #dbdbdb}
+.tree_table .tree_wrap .btnNoGroupUser:hover{text-decoration:none}
+.tree_table .table_wrap{width:620px;border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb}
+.tree_table .table_wrap .title_tbtn{position:absolute;top:15px;right:-5px;font-size:0;white-space:nowrap;z-index:1}
+.tree_table .title_tbtn .btn30{margin-right:5px}
+.tree_table .title_tbtn div{display:inline-block;*display:inline;*zoom:1}
+.tree_table .title_tbtn .bci_box{margin-right:5px}
+.tree_table table th.tb_2{width:112px}
+.tree_table .table_wrap th.tb_3,.tree_table .table_wrap table th.tb_4{width:110px}
+.tree_table .table_wrap table th.tb_5{width:84px}
+.tree_table .table_wrap .page_btn{padding-bottom:30px}
+.tree_table .tree_wrap .idTree{padding-left:20px}
+.unormal_wrap .tree_table .tree_wrap .idTree{height:585px}
+.uorgan_wrap .tree_table .tree_wrap .idTree{height:625px}
+.uorgan_wrap .table_wrap td .ipt_txt{width:184px;color:#4b4b4b;padding-left:7px}
+.log_wrap .table_wrap th, .log_wrap .table_wrap td{text-align:center;padding:0}
+.log_wrap .table_wrap .tb_2 .name{cursor:default}
+.login_log .table_wrap th{width:188px}
+.work_log .table_wrap th{width:156px}
+
+/* user register setting*/
+.rset_wrap .title_wrap{margin-bottom:23px}
+.rset_wrap h4{line-height:20px;margin-bottom:16px}
+.rset_wrap .regiset_wrap .rgs_box{border:1px solid #dbdbdb}
+.rset_wrap .setting_wrap{position:relative;padding:54px 0 11px 70px}
+.rset_wrap .setting_wrap ul{font-size:0;overflow:hidden}
+.rset_wrap .setting_wrap li{float:left;min-width:138px;height:16px;padding-bottom:48px}
+.rset_wrap .setting_wrap li .checkbox,.rset_wrap .setting_wrap li label,.rset_wrap .invite_wrap h5, .rset_wrap .invite_wrap .inr_box, .rset_wrap .invite_wrap li, .rset_wrap .invite_wrap li .radio, .rset_wrap .invite_wrap li label,.rset_wrap .invite_wrap li .help{float:left}
+.rset_wrap .setting_wrap label{color:#4b4b4b;font-size:14px;line-height:16px;padding:0 11px}
+.rset_wrap .iv_auth{border-bottom:1px solid #dbdbdb}
+.rset_wrap .invite_wrap .iv_box, .rset_wrap .invite_wrap ul, .rset_wrap .invite_wrap li{*zoom:1}
+.rset_wrap .invite_wrap .iv_box:after, .rset_wrap .invite_wrap:after,.rset_wrap .invite_wrap ul:after,.rset_wrap .invite_wrap li:after{display:block;clear:both;content:""}
+.rset_wrap .invite_wrap .iv_box{padding:42px 0}
+.rset_wrap .invite_wrap h5, .rset_wrap .invite_wrap li{line-height:16px}
+.rset_wrap .invite_wrap h5{font-size:14px;width:178px;color:#a5a5a5;padding-left:70px}
+.rset_wrap .invite_wrap li{height:16px;font-size:0;margin-right:60px}
+.rset_wrap .invite_wrap li label{font-size:14px;padding-left:6px}
+.rset_wrap .invite_wrap li .help{position:relative;z-index:1;height:14px;margin:1px 0 0 5px}
+.rset_wrap .iv_auth li .help{z-index:2}
+.rset_wrap .invite_wrap .help .hco{position:relative;display:block;width:14px;height:14px;background:url("../img/manage/spr_blt.png") -54px -94px no-repeat}
+.rset_wrap .invite_wrap .help .help_box{display:none;position:absolute;top:14px;left:0;border-radius:2px;padding-top:3px}
+.rset_wrap .invite_wrap .help .help_box dl{border:1px solid #a5a5a5;background:#fff;white-space:nowrap;padding:16px 18px}
+.rset_wrap .invite_wrap .help .help_box dt{font-size:14px;margin-bottom:3px}
+.rset_wrap .invite_wrap .help .help_box dd{font-size:12px;color:#a5a5a5}
+.invite_wrap .iv_domain .add_form{display:none;margin-top:20px}
+.rset_wrap .btn_area{padding:40px 0 80px}
+
+.rset_wrap .position_edit{padding-top:48px}
+.rset_wrap .position_edit.duty_edit{margin-bottom:48px}
+
+.position_modify{border:1px solid #dbdbdb}
+.position_modify ul{position:relative;font-size:0}
+.position_modify li{position:relative;overflow:hidden;min-height:49px;border-bottom:1px solid #dbdbdb}
+.position_modify li:hover{background:#F8F8F8}
+.position_modify .ipt_txt{width:727px;height:49px;line-height:49px;display:block;border:0 none;background:none;font-size:16px}
+.position_modify .ipt_txt::-webkit-input-placeholder{font-size:13px;color:#a5a5a5}
+.position_modify .ipt_txt:-moz-placeholder,.position_modify .ipt_txt::-moz-placeholder{font-size:13px;color:#a5a5a5}
+.position_modify .ipt_txt:-ms-input-placeholder{font-size:13px;color:#a5a5a5}
+.position_modify li .pname, .position_modify li .pedit{float:left}
+.position_modify li .pname{position:relative;width:807px;min-height:49px}
+.position_modify li .pname a{display:block;min-height:19px;line-height:19px;font-size:16px;word-break:break-all;padding:15px 40px}
+.position_modify li .pname a:hover{text-decoration:none}
+.position_modify li .pname .edit_input{overflow:hidden;display:none;height:100%;padding:0 40px}
+.position_modify li .pname .edit_input .ipt_txt{color:#00a8ff}
+.position_modify li.editing .pname a{display:none}
+.position_modify li.editing .pname .edit_input{display:block}
+.position_modify li .pedit{height:49px;font-size:0}
+.position_modify li .pedit a, .position_modify li .pedit .align{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}
+.position_modify li .pedit .align{height:100%}
+.position_modify li .pedit a{font-size:14px;color:#a5a5a5;margin-right:14px}
+.position_modify li .movable{position:absolute;top:0;bottom:0;right:0;display:block;width:53px;cursor:move;height:100%;background:url("../img/manage/spr_blt.png") -386px -184px no-repeat}
+.position_modify li.moving{position:absolute;width:100%;background:#fff;border-bottom:0 none;box-shadow:0 1px 7px rgba(0,0,0,0.15);z-index:10}
+.position_modify li.moving, .position_modify li.moving a{cursor:move}
+.position_modify .postion_add{position:relative}
+.position_modify .postion_add .add_input{margin:0 171px 0 40px}
+.position_modify .postion_add .add_btn{position:absolute;top:12px;right:39px}
+.position_modify .postion_add .add_btn a{display:inline-block;*display:inline;*zoom:1;height:23px;line-height:23px;font-size:14px;min-width:28px}
+
+/* log */
+.log_wrap .title_wrap{margin-bottom:22px}
+.log_wrap .search_add{position:absolute;top:0;right:0}
+.log_wrap .search_add .btn30 .arrow{min-width:76px}
+.ba_wrap.search_add li{min-width:121px;font-size:0}
+.ba_wrap.search_add li .checkbox{position:absolute;top:6px;left:8px}
+.ba_wrap.search_add li label{display:block;font-size:13px;padding-left:37px}
+.ba_wrap.search_add li label:hover{background:#f8f8f8}
+.log_wrap .log_search{border:1px solid #dbdbdb;padding:34px 0 49px 20px;margin-bottom:40px}
+.log_wrap .log_search .select_logs{width:918px;*zoom:1}
+.log_wrap .log_search .select_logs:after{content:"";display:block;clear:both}
+.log_wrap .log_search dt{width:100px;line-height:30px}
+.log_wrap .log_search dl, .log_wrap .log_search dt, .log_wrap .log_search dd{float:left;height:30px}
+.log_wrap .log_search dl{display:none;padding:15px 0 15px 60px}
+.log_wrap .log_search p.add_es{display:none;text-align:center;line-height:19px;padding:14px 0}
+.log_wrap .log_search .dl_zindex dd{z-index:1}
+.log_wrap .log_search dd{position:relative;width:260px}
+.log_wrap .log_search dd .date_box{position:relative}
+.log_wrap .log_search dd .date_box, .log_wrap .log_search dd .dash{float:left}
+.log_wrap .log_search dd .date_box label{position:absolute;top:8px;right:9px;width:16px;height:15px;background:url("../img/manage/spr_blt.png") -80px -93px no-repeat;z-index:1}
+.log_wrap .log_search dd .dash{display:inline-block;*display:inline;*zoom:1;width:20px;height:100%;vertical-align:top;line-height:31px;font-size:15px;text-align:center}
+.log_wrap .log_search dd .select{width:258px;font-size:0}
+.log_wrap .log_search dd .select a{font-size:13px;height:28px;line-height:28px;padding:0 8px}
+.log_wrap .log_search dd .select ul{top:31px;max-height:156px}
+.log_wrap .log_search dd .select .s_default{background-position:-151px 11px}
+.log_wrap .log_search dd .select.show .s_default{background-position:-151px -43px}
+.log_wrap .log_search dd .ipt114{font-size:14px;letter-spacing:-1px;width:108px;padding-left:10px}
+.log_wrap .log_search dd .ipt251{width:250px;padding-left:8px}
+.log_wrap .log_search dd.tdlog_name{position:relative}
+.log_wrap .log_search dd.tdlog_name label{position:absolute;top:6px;left:11px;font-size:13px;color:#adadad;cursor:text;line-height:19px}
+.log_wrap .log_apply{text-align:center;padding-top:15px}
+.log_wrap .log_apply .btn30{width:68px}
+
+/* user input */
+.user_rein h3 .sub_d{font-size:18px;color:#00a8ff;vertical-align:top;background:url("../img/manage/spr_blt.png") 0 -175px no-repeat;padding-left:21px;margin-left:8px}
+.user_rein .rein_tb{width:620px;z-index:1;padding-top:19px;margin:0 auto}
+.table_input .tr_position,.table_input .tr_position td{z-index:2}
+.table_input .tr_duty,.table_input .tr_duty td{z-index:1}
+.user_rein .rein_tb .td_pr{position:relative;width:100%;height:100%}
+.user_rein .rein_tb .td_pr .txt{display:block;width:310px;height:50px;line-height:48px;overflow:hidden;text-overflow:ellipsis;word-break:break-all;white-space:nowrap}
+.user_rein .rein_tb .td_pr .sel_big{width:300px}
+.user_rein .rein_tb td .btn30{font-size:14px}
+.user_rein .rein_tb td .bw120{width:118px}
+.user_rein .rein_tb td .td_pr .btn_white{position:absolute;right:0;top:10px}
+.user_rein .btn_area{padding:50px 0 80px}
+.user_rein .userinfo{overflow:hidden;border-bottom:1px solid #a5a5a5;padding:10px 0 50px;margin-bottom:19px}
+.user_rein .userinfo .thumb_s, .user_rein .userinfo .usertxt{float:left}
+.user_rein .userinfo .thumb_s{width:140px;height:140px;margin-right:19px}
+.user_rein .userinfo .usertxt{font-size:0;padding-top:16px}
+.user_rein .userinfo .usertxt dt, .user_rein .userinfo .usertxt .user_sort{display:inline-block;*display:inline;*zoom:1;vertical-align:baseline}
+.user_rein .userinfo .usertxt dt{font-size:24px;margin-right:5px}
+.user_rein .userinfo dd{font-size:14px;line-height:19px}
+.user_rein .userinfo .user_date{margin:4px 0 16px}
+.user_rein .userinfo .usertxt .user_sort{color:#00a8ff}
+.user_rein .userinfo .btn40{width:138px;border-radius:2px;height:38px;line-height:37px;font-size:14px;margin-right:10px}
+
+/*popup*/
+.mpop{border:1px solid #a5a5a5;background:#fff;box-shadow:0 1px 5px rgba(0,0,0,0.15)}
+.mpop .mtitle{position:relative;height:34px;background:#ededed;padding-left:14px}
+.mpop .mtitle h2{font-size:14px;line-height:33px}
+.mpop .mtitle .mclose{position:absolute;top:1px;right:2px;width:30px;height:30px;background:url("../img/manage/spr_blt.png") -18px -85px no-repeat}
+.mpop .mfloat_wrap{width:508px;overflow:hidden}
+.mpop .mfloat_wrap .ms_wrap .ipt_txt{width:212px}
+.mpop .mfloat_wrap .mpop_left{float:left;width:269px;border-right:1px solid #dbdbdb}
+.mpop .mfloat_wrap .mpop_right{float:right;width:238px}
+.mpop .mfloat_wrap .ms_wrap .keyword{width:247px}
+.mpop .ms_wrap{border-bottom:1px solid #ededed;z-index:1;padding:10px}
+.mpop .ms_wrap p,.mpop .madd_top p{line-height:18px}
+.mpop .ms_wrap p strong{font-weight:normal;color:#00a8ff}
+.mpop .box_302{height:302px}
+.mpop .box_353{height:353px}
+.mpop .box_254{height:254px}
+.mpop .idTree{padding-left:10px}
+.mpop .user_count{height:50px;line-height:50px;overflow:hidden;border-bottom:1px solid #ededed;padding:0 12px}
+.mpop .user_count dt, .mpop  .user_count dd{float:left;font-size:13px}
+.mpop .user_count dt{color:#262626;padding-right:1px}
+.mpop .user_count dd{color:#00a8ff}
+.mpop .added_box .bg_txt{position:absolute;left:0;width:100%;top:50%;text-align:center;color:#a5a5a5;font-size:13px;line-height:18px;margin-top:-18px}
+.mpop .added_box div{position:relative;font-size:13px;line-height:20px;overflow:hidden;text-overflow:ellipsis;word-break:break-all;white-space:nowrap;border-bottom:1px solid #ededed;color:#262626;cursor:default;background:#fff;padding:9px 24px 9px 12px}
+.mpop .added_box div strong{font-weight:normal}
+.mpop .added_box div span{color:#a5a5a5;font-size:11px;padding-left:9px}
+.mpop .added_box div a{position:absolute;right:11px;top:12px;width:12px;height:12px;background:url("../img/manage/spr_blt.png") -107px -94px no-repeat}
+.mpop .mpop_btn{border-top:1px solid #dbdbdb;text-align:center;font-size:0;padding:14px 0}
+.mpop .mpop_btn .btn34{margin:0 5px}
+.mpop .mmove{width:348px}
+.mpop .mmove .ms_wrap .input_wrap{margin-bottom:4px}
+.mpop .mmove .ms_wrap .ipt_txt{width:291px}
+.mpop .mmove .ms_wrap p{color:#262626;padding:4px 0 7px}
+.mpop .mmove .group_box{height:267px}
+.mpop .mmove .keyword{width:326px}
+.mpop .keyword.part_box a{display:block;overflow:hidden;text-overflow:ellipsis;word-break:break-all;white-space:nowrap;line-height:29px;color:#292929;border-top:1px solid #dbdbdb;font-size:13px;padding:0 9px}
+.mpop .keyword.part_box div a:hover{background:#f8f8f8;text-decoration:none}
+.mpop .keyword.part_box div a span{color:#00a8ff}
+.mpop .madd_top{position:relative;border-bottom:1px solid #dbdbdb;padding:16px 13px}
+.mpop .madd_top p{width:340px}
+.mpop .madd_top .no_part{position:absolute;right:14px;font-size:0;top:17px}
+.mpop .madd_top .no_part .checkbox, .mpop .madd_top .no_part label{display:inline-block;*display:inline;*zoom:1;vertical-align:top}
+.mpop .madd_top .no_part label{font-size:12px;line-height:16px;color:#262626;padding-left:4px}
+.mpop .mmove .user_box a{padding-right:45px}
+.mpop .mmove .user_box .checked a{background:#edf8ff url("../img/manage/blt_checked_admin.png") 100% 50% no-repeat}
+
+/*팀 프로필*/
+.profile_cont{padding:88px 0 129px}
+.profile_cont table{table-layout:fixed;margin:0 auto}
+.profile_cont table th{width:160px;font-weight:normal;text-align:left;color:#4b4b4b}
+.profile_cont table td{position:relative;width:460px;height:59px;line-height:59px;border-bottom:1px solid #a5a5a5;color:#262626;font-size:18px}
+.profile_cont table td.cname .cn_modi{display:none;position:absolute;top:0;left:0;width:100%;height:60px}
+.profile_cont table td.cname.modim .cn_modi{display:block}
+.profile_cont table td.cname .ipt_txt2{display:block;width:310px;height:59px;line-height:58px;font-size:18px;color:#00a8ff;border-bottom-color:#00a8ff;padding-right:150px}
+.profile_cont table td.cname .ipt_txt2:focus{outline:0}
+.profile_cont table td.finish{border-bottom-color:#19b1ff;color:#19b1ff}
+.profile_cont table td .btn30{position:absolute;right:0px;top:14px;width:118px;font-size:14px}
+.profile_cont table td .ellipsis{display:block;width:310px;overflow:hidden;text-overflow:ellipsis;word-break:break-all;white-space:nowrap}
+.profile_cont .btn_area{margin-top:100px}
+
+/*보안관리*/
+.secure_cont{padding-top:34px}
+.secure_cont h3{margin-bottom:22px}
+.secure_cont .add_conts{border-top:1px solid #CFCFCF;padding-top:50px}
+.secure_cont table{margin:0 auto}
+.secure_cont table th{width:218px}
+.secure_cont table td{min-width:297px;color:#000;padding-bottom:20px}
+.secure_cont table td .ipt_txt{vertical-align:middle}
+.secure_cont table td span{font-size:14px;line-height:25px;vertical-align:middle}
+.secure_cont table td span.gray{color:#707070;vertical-align:baseline}
+.secure_cont table td .ipt_radio{*width:13px;*height:13px}
+.secure_cont table td .ipt_radio, .secure_cont td label{vertical-align:middle}
+.secure_cont table td label{display:inline-block;*display:inline;*zoom:1;font-size:14px;height:29px;line-height:27px;cursor:pointer;padding:0 20px 0 8px}
+.secure_cont table td.alert label{margin-right:30px}
+.secure_cont table td p{padding-top:3px}
+.secure_cont .btn_area{margin:32px auto 120px}
+
+/*용량관리 > 설정*/
+.caset_box{height:338px;border:1px solid #E3E3E3;overflow:hidden}
+.caset_box .ca_inner{float:left;width:408px;overflow:hidden;color:#000;height:296px;padding:42px 0 0 70px}
+.caset_box .ca_inner.cleft{width:409px;border-right:1px solid #e3e3e3}
+.caset_box .ca_inner h4{color:#4384ee;font-size:20px;line-height:23px;padding-right:47px}
+.caset_box .ca_inner h4, .caset_box .ca_inner dl{float:left}
+.caset_box .ca_inner dl{padding-top:5px}
+.caset_box .ca_inner dt, .caset_box .ca_inner dd{font-size:14px;padding-left:14px}
+.caset_box .ca_inner dt{background:url("../img/manage/blt_dot.gif") 0 5px no-repeat;margin-bottom:16px}
+.caset_box .ca_inner dd{overflow:hidden;height:29px;line-height:27px;padding-bottom:14px}
+.caset_box .ca_inner dd .ipt52{vertical-align:top;margin-right:4px}
+.caset_box .ca_inner dd span{display:inline-block;*display:inline;*zoom:1;width:68px;height:100%}
+.caset_box .ca_inner .cdt2{margin-top:21px}
+.capaset_wrap .btn_area{margin:29px auto 90px}
+
+/*용량관리 > 게시글 용량관리, 삭제글 용량 관리*/
+.capalist_wrap .title_wrap .btn_recover span{padding:0 21px 0 11px}
+.capalist_wrap .table_wrap table th, .capalist_wrap .table_wrap table td{text-align:center}
+.capalist_wrap .table_wrap table td{letter-spacing:0;padding-right:0}
+.capalist_wrap .table_wrap table td a{color:#000}
+.capalist_wrap .table_wrap table td.tb_2, .capalist_wrap .table_wrap table td.tb_3{letter-spacing:-1px}
+.capalist_wrap .table_wrap table .tb_2{text-align:left}
+.capalist_wrap .table_wrap table .tb_2 .thumb_s{margin-right:11px}
+.capalist_wrap .table_wrap table th.tb_2{padding-left:50px}
+.capalist_wrap .table_wrap table .tb_6{width:94px;padding-right:10px}
+.capalist_wrap .table_wrap table .tb_5{width:164px}
+.capalist_wrap.boardc_wrap .table_wrap table th.tb_2{width:232px}
+.capalist_wrap.boardc_wrap  .table_wrap table .tb_4{width:180px}
+.capalist_wrap.delc_wrap .table_wrap table th.tb_2{width:176px}
+.capalist_wrap.delc_wrap .table_wrap table .tb_4,.capalist_wrap.delc_wrap .table_wrap table .tb_7{width:118px}
+.capalist_wrap.delc_wrap .table_wrap table .tb_7{overflow:visible}
+.capalist_wrap.delc_wrap .table_wrap table .tb_7 span{cursor:pointer;letter-spacing:-1px}
+
+/*용량관리 > 용량정보*/
+.capain_wrap .title_wrap{margin-bottom:22px}
+.capain_wrap .capa_graph{border:1px solid #E3E3E3;height:409px;margin-bottom:70px}
+.capain_wrap .capa_graph .graph_summary{font-size:0;text-align:center;overflow:hidden;padding-top:58px}
+.capain_wrap .capa_graph .graph_summary dl{display:inline-block;*display:inline;*zoom:1;padding:0 28px;margin-bottom:60px}
+.capain_wrap .capa_graph .graph_summary dt{margin-bottom:8px}
+.capain_wrap .capa_graph .graph_summary dd{font-size:30px;font-family:'tahoma'}
+.capain_wrap .capa_graph .graph_summary .use_sum dd{color:#4285f0}
+.capain_wrap .capa_graph .graph_summary .capa_sum dd{color:#707070}
+.capain_wrap .capa_graph .graph_bar{width:700px;_overflow:hidden;font-size:0;margin:0 auto}
+.capain_wrap .capa_graph .graph_bar .bar_wrap{position:relative;height:37px;background:#E8EBEF;text-align:left;}
+.capain_wrap .capa_graph .graph_bar .draw{display:inline-block;*display:inline;*zoom:1;height:36px}
+.capain_wrap .capa_graph .graph_bar .draw.feed{background:#4484ee;border-bottom:1px solid #4484ee}
+.capain_wrap .capa_graph .graph_bar .draw.messanger{background:#F1C433;border-bottom:1px solid #D8B02E}
+.capain_wrap .capa_graph .graph_bar .draw.etc{position:relative;background:#767F8A;border-bottom:1px solid #6A727C}
+.capain_wrap .capa_graph .graph_bar .text_bubble{position:absolute;top:-51px;right:-140px;width:281px;background:#4B525C;color:#fff;font-size:12px;line-height:17px;text-align:center;border-radius:2px;padding:5px 0}
+.capain_wrap .capa_graph .graph_bar .text_bubble strong{color:#ff9c00;display:block}
+.capain_wrap .capa_graph .graph_bar .text_bubble .blt_bubble{overflow:hidden;position:absolute;bottom:-4px;left:50%;width:7px;height:4px;background:url("../img/manage/blt_capacity_bubble.gif") no-repeat;margin-left:-3px}
+.capain_wrap .capa_graph .graph_bar .figure{position:relative;width:768px;overflow:hidden;margin-left:-34px}
+.capain_wrap .capa_graph .graph_bar .figure span{float:left;width:70px;font-size:12px;color:#909090;line-height:17px;background:url("../img/manage/blt_capacity_dash.gif") 34px 0 no-repeat;letter-spacing:0;text-align:center;padding-top:58px}
+.capain_wrap .capa_graph .graph_bar .figure .fig_100{width:48px;background-position: 33px 0;padding-left:20px}
+.capain_wrap .capa_graph .detail_num{overflow:hidden;margin-top:45px}
+.capain_wrap .capa_graph .detail_num dt, .capain_wrap .capa_graph .detail_num dd{float:left;font-size:14px;height:23px;line-height:21px}
+.capain_wrap .capa_graph .detail_num span, .capain_wrap .capa_graph .detail_num strong{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;height:100%}
+.capain_wrap .capa_graph .detail_num dt{padding-right:7px}
+.capain_wrap .capa_graph .detail_num dt .mark{width:14px;height:14px;line-height:0;overflow:hidden;margin-right:8px}
+.capain_wrap .capa_graph .detail_num dt.dt_feed .mark{background-color:#4484ee}
+.capain_wrap .capa_graph .detail_num dt.dt_ms .mark{background-color:#F1C433}
+.capain_wrap .capa_graph .detail_num dt.dt_etc .mark{background-color:#767F8A}
+.capain_wrap .capa_graph .detail_num dd{color:#707070;letter-spacing:0;padding-right:42px}
+.capain_wrap .capa_graph .detail_num dd strong{color:#000}
+
+/*관리자 로그*/
+.admin_log .log_search dd .sort_admin{height:18px;overflow:hidden;margin:8px 0}
+.admin_log .log_search dl{float:none}
+.admin_log .log_search dl, .admin_log .log_search dl dd{width:auto}
+.admin_log .log_search dd .sort_admin li,.admin_log .log_search dd li .checkbox, .admin_log .log_search dd .sort_admin li label{float:left}
+.admin_log .log_search dd .sort_admin li label{font-size:13px;line-height:17px;color:#000;padding:0 18px 0 9px}
+.admin_log .table_wrap table .tb_5{width:136px;padding-right:110px}
+.admin_log .table_wrap table td.tb_5{letter-spacing:0}
+.admin_log .table_wrap table th.tb_2{width:170px;padding-left:51px}
+.log_wrap.admin_log .table_wrap table .tb_3{width:150px;padding-right:37px}
+.admin_log .table_wrap table .tb_4{width:250px}
+
+/*설정 홈*/
+.setting_home{padding-top:31px}
+.setting_home h4 span{display:inline-block;*display:inline;*zoom:1;line-height:21px;font-size:12px;color:#707070;font-weight:normal;letter-spacing:0;padding-left:12px}
+.setting_home .look_more{position:absolute;font-size:12px;line-height:17px;color:#707070;background:url("../img/manage/blt_setting_more.gif") 100% 7px no-repeat;padding-right:8px}
+:root .setting_home .look_more{line-height:13px \0/IE9}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.setting_home .look_more{line-height:13px}}
+.setting_home .today_log{height:178px;overflow:hidden;background:#F4F7FA;border:1px solid #E3E3E3;letter-spacing:-1px;margin-bottom:47px}
+.setting_home .today_log .tn_img, .setting_home .today_log .tn_text{float:left;position:relative}
+.setting_home .today_log .tn_img{width:248px;height:149px;border-right:1px solid #E3E8EE;padding-top:29px}
+.setting_home .today_log .tn_img a:hover{text-decoration:none}
+.setting_home .today_log .tn_img a *{cursor:pointer}
+.setting_home .today_log .tn_img .new_num{position:relative;display:block;width:83px;height:83px;background:url("../img/manage/bg_setting-today.png") no-repeat;margin:0 auto 18px}
+.setting_home .today_log .tn_img .new_num .ncircle, .setting_home .today_log .tn_img .new_num .ncircle strong{height:27px;background:url("../img/manage/spr_bg_user-log.png") no-repeat}
+.setting_home .today_log .tn_img .new_num .ncircle{position:absolute;left:56px;top:54px}
+.setting_home .today_log .tn_img .new_num .ncircle strong{display:inline-block;*display:inline;*zoom:1;line-height:25px;background-position:100% 100%;color:#fff;text-align:center;margin-left:10px;padding-right:10px}
+.setting_home .today_log .tn_img p{font-size:14px;color:#656565;line-height:21px;text-align:center}
+.setting_home .today_log .tn_img p strong{color:#4384ee}
+.setting_home .today_log .tn_text h4{margin:37px 0 39px 25px}
+.setting_home .today_log .tn_text div{overflow:hidden}
+.setting_home .today_log .tn_text .log_info{margin-left:8px}
+.setting_home .today_log .tn_text .log_info div{width:702px;margin-right:-1px}
+.setting_home .today_log .tn_text dl{position:relative;float:left;width:117px;height:48px;background:url("../img/manage/blt_setting_log.gif") 100% 0 no-repeat}
+.setting_home .today_log .tn_text .look_more{top:38px;right:26px}
+.setting_home .today_log .tn_text dt, .setting_home .today_log .tn_text dd{text-align:center}
+.setting_home .today_log .tn_text dt{position:absolute;left:0;bottom:0;width:100%;font-size:12px;line-height:17px;color:#8d9095}
+.setting_home .today_log .tn_text dd{font-family:'tahoma';font-size:24px;color:#4384ee}
+.setting_home .setting_admin{position:relative}
+.setting_home .setting_admin .table_btn{padding:0 0 50px}
+.setting_home .setting_admin h4{margin-bottom:21px}
+.setting_home .setting_admin .look_more{right:0;top:3px}
+
+/*테이블 유저 정보 툴팁*/
+table .u_tooltip{display:none;position:absolute;top:37px;left:50%;background:#fff;border:1px solid #a5a5a5;min-width:187px;z-index:10;text-align:left;padding:10px 15px}
+table .u_tooltip dt, table .u_tooltip dd{font-size:13px;line-height:20px}
+
+/*게시글 미리보기 , 작업내용 상세보기 팝업*/
+.mpop.preview_pop{width:388px;height:373px;margin:-183px 0 0 -194px}
+.mpop.preview_pop .writer{overflow:hidden;width:376px;border-bottom:1px solid #D0D0D0;font-size:0;padding:14px 0 14px 12px}
+.mpop.preview_pop .thumb_s, .mpop.preview_pop .winfo{float:left}
+.mpop.preview_pop .thumb_s{vertical-align:top;margin-right:11px}
+.winfo p strong, .mpop.preview_pop .writer .winfo p span{display:inline-block;*display:inline;*zoom:1}
+.mpop.preview_pop .writer .winfo{padding-top:2px}
+.mpop.preview_pop .writer .winfo p strong, .mpop.preview_pop .writer .winfo p span{vertical-align:middle}
+.mpop.preview_pop .writer .winfo strong{line-height:19px;font-size:13px}
+.mpop.preview_pop .writer .winfo .part{line-height:17px;font-size:11px;color:#969696;padding:0 7px 0 5px}
+.mpop.preview_pop .writer .winfo .bltboard{width:3px;height:5px;background:url("../img/manage/blt_board-arrow.gif") 0 100% no-repeat;margin-right:6px}
+:root .mpop.preview_pop .writer .winfo .bltboard{height:7px \0/IE9}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.mpop.preview_pop .writer .winfo .bltboard{height:7px}}
+.mpop.preview_pop .writer .winfo .writedate{color:#969696;font-size:12px;margin-top:4px}
+.mpop.preview_pop .list_content{height:263px;overflow-y:auto;padding:0 20px}
+.mpop.preview_pop .list_content p, .mpop.preview_pop .list_content h3, .mpop.preview_pop .list_content li{line-height:19px}
+.mpop.preview_pop .list_content h3{color:#1a1c20;margin:15px 0 4px}
+.mpop.preview_pop .list_content li a{letter-spacing:0;color:#3c77d6}
+.mpop.preview_pop .list_content li span{color:#adadad;font-size:11px;letter-spacing:0;padding-left:4px}
+
+/* 관리자 팝업 하위버전용 width 지정 */
+.ui_draggable{display:none;position:fixed;top:50%;left:50%;z-index:101}
+#popPartmove .mpop, #popUsermove .mpop, #superAdminChange .mpop{width:348px}
+#adminAdd .mpop{width:508px}

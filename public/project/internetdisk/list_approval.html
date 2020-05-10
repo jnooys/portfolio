@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>반출관리</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<link rel="stylesheet" href="./css/common.css">
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="btn_header">
+            <a href="" class="btn_list"><span class="trans">리스트 보기</span></a>
+            <span class="bg"></span>
+            <div class="gnb">
+                <h1><span>반출관리</span></h1>
+                <ul>
+                    <li class="gnb1"><a href="./list_yet-approve.html"><span>미 결재 내역</span></a></li>
+                    <li class="gnb2"><a href="./list_not-approve.html"><span>부결 내역</span></a></li>
+                    <li class="gnb3"><a href="./list_approval.html"><span>결재 완료 내역</span></a></li>
+                </ul>
+                <a href="" class="close"><span class="trans">닫기</span></a>
+                <div class="btn_btm">
+                    <a href="" class="btn_pc">PC버전</a>
+                </div>
+            </div>
+        </div>       
+        <h2>결재 완료 내역</h2>
+    </div>
+    <div class="content">
+        <div class="list_wrap">
+            <ul>
+                <li>
+                    <a href="./view_approval.html">
+                         <dl><!--결재진행중, 신청일 경우 <dd class="state apply"> / 부결, 사용자가 취소일 경우 <dd class="state none"> / 결재완료일 경우 <dd class="state approval"> / 반출 완료일 경우 <dd class="state done">-->
+                             <dt><span class="site">메일</span>로 반출</dt>
+                             <dd class="diskname">Disk1</dd>
+                             <dd class="uname">홍길동(gildong1234)</dd>
+                             <dd class="date">2014-10-17 18:01:00</dd>
+                             <dd class="state approval">결재완료</dd>
+                         </dl>   
+                    </a>
+                </li>
+                <li>
+                    <a href="./view_approval.html">
+                         <dl>
+                             <dt><span class="site">반출함</span>으로 반출</dt>
+                             <dd class="diskname">Disk2</dd>
+                             <dd class="uname">홍길동(gildong1234)</dd>
+                             <dd class="date">2014-10-17 18:01:00</dd>
+                             <dd class="state none">사용자가 취소</dd>
+                         </dl>   
+                    </a>
+                </li>
+                <li>
+                    <a href="./view_approval.html">
+                         <dl>
+                             <dt><span class="site">USB/반출함</span>으로 반출</dt>
+                             <dd class="diskname">Disk3</dd>
+                             <dd class="uname">이순신(lss031564)</dd>
+                             <dd class="date">2014-10-17 18:01:00</dd>
+                             <dd class="state apply">결재 진행중</dd>
+                         </dl>   
+                    </a>
+                </li>
+                <li>
+                    <a href="./view_approval.html">
+                         <dl>
+                             <dt><span class="site">반출함</span>으로 반출</dt>
+                             <dd class="diskname">디스크이름</dd>
+                             <dd class="uname">Brad Pitt(bradpitt)</dd>
+                             <dd class="date">2014-10-17 18:01:00</dd>
+                             <dd class="state done">반출완료</dd>
+                         </dl>   
+                    </a>
+                </li>
+                <li>
+                    <a href="./view_approval.html">
+                         <dl>
+                             <dt><span class="site">USB/반출함</span>으로 반출</dt>
+                             <dd class="diskname">디스크이름</dd>
+                             <dd class="uname">홍길동(gildong1234)</dd>
+                             <dd class="date">2014-10-17 18:01:00</dd>
+                             <dd class="state none">사용자가 취소</dd>
+                         </dl>   
+                    </a>
+                </li>
+                <li>
+                    <a href="./view_approval.html">
+                         <dl>
+                             <dt><span class="site">USB</span>로 반출</dt>
+                             <dd class="diskname">디스크이름</dd>
+                             <dd class="uname">홍길동(gildong1234)</dd>
+                             <dd class="date">2014-10-17 18:01:00</dd>
+                             <dd class="state approval">결재완료</dd>
+                         </dl>   
+                    </a>
+                </li>
+                <li>
+                    <a href="./view_approval.html">
+                         <dl>
+                             <dt><span class="site">USB/반출함</span>으로 반출</dt>
+                             <dd class="diskname">디스크이름</dd>
+                             <dd class="uname">Brad Pitt(bradpitt)</dd>
+                             <dd class="date">2014-10-17 18:01:00</dd>
+                             <dd class="state apply">신청</dd>
+                         </dl>   
+                    </a>
+                </li>
+            </ul>
+            <p class="pager">
+                <a href="" class="move prev"><span class="trans">이전</span></a>
+                <strong><span class="now">1</span><span> / 5</span></strong>
+                <a href="" class="move next"><span class="trans">다음</span></a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

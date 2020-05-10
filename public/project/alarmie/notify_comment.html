@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>링스토어</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="./css/common.css" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+</head>
+<body>
+<script>var storeNum = 1;</script>
+<h1 class="blind">신고하기</h1>
+<div class="content_wrap notify">
+    <p class="n_caution">신고할 경우 해당 댓글은 삭제 조치 될 수 있습니다.<br>
+    단 허위신고일 경우 신고자의 서비스 이용이<br>
+    제한 받을 수 있습니다. 이점 유의 바랍니다.<br>
+    </p>
+    <div class="noti_wrap">
+        <h2>신고이유</h2>
+        <!--label for ="" 와 input id="" 가 동일하여 label 태그를 클릭하면 라디오버튼 또한 클릭되도록 설정-->
+        <ul class="ipt_radio">
+            <li><input type="radio" name="c_notify" id="c_no_1"><label for="c_no_1">욕설 또는 인신공격</label></li>
+            <li><input type="radio" name="c_notify" id="c_no_2"><label for="c_no_2">개인정보 유출</label></li>
+            <li><input type="radio" name="c_notify" id="c_no_3"><label for="c_no_3">상업적 광고 및 홍보물</label></li>
+            <li><input type="radio" name="c_notify" id="c_no_4"><label for="c_no_4">음란성/ 폭력성/ 사행성</label></li>
+            <li><input type="radio" name="c_notify" id="c_no_5"><label for="c_no_5">동일 내용 반복 게재(도배)</label></li>
+            <li><input type="radio" name="c_notify" id="c_no_6"><label for="c_no_6">저작권 침해</label></li>
+            <li><input type="radio" name="c_notify" id="c_no_7"><label for="c_no_7">기타</label>
+                <div class="txt_wrap" style="display:none"><textarea cols="12" rows="1"></textarea></div>
+            </li>
+        </ul>
+        <div class="noti_btn">
+            <span class="n_cancel"><a href="#n"><span class="cover"></span>취소</a></span>
+            <span class="n_confirm"><a href="#n"><span class="cover"></span>신고하기</a></span>
+        </div>          
+    </div>  
+</div>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
