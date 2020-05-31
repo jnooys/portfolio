@@ -43,7 +43,7 @@ const initialState = {
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const img_path = '/portfolio/images/thumbnail/';
+  const img_path = 'https://rongchyo.cafe24.com/resources/images/thumbnail/';
 
   const openModal = useCallback((work) => {
     const html = document.querySelector('html');
