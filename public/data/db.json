@@ -5,6 +5,7 @@
         {"id": "mobile", "name": "Mobile"},
         {"id": "event", "name": "Promotion/Event"}
     ],
+
     "project": [
         {   
             "id": "pc",
@@ -74,7 +75,6 @@
             "thumbnail": "cabal_pc-1.jpg",
             "images": ["cabal_pc-1_1.jpg", "cabal_pc-1_2.jpg", "cabal_pc-1_3.jpg"]
         },
-
         {
             "id": "pc",
             "title": "알툴즈",
@@ -126,7 +126,6 @@
             ],
             "images": ["internetdisk-1_1.jpg", "internetdisk-1_2.jpg", "internetdisk-1_3.jpg"]
         },
-
         {
             "id": "event",
             "title": "바람의나라",
@@ -149,7 +148,6 @@
             "thumbnail": "br-event-1.jpg",
             "images": ["br-event-1_1.jpg", "br-event-1_2.jpg"]
         },
-
         {
             "id": "event",
             "title": "메이플스토리2",
@@ -194,7 +192,6 @@
             "thumbnail": "kr-event-1.jpg",
             "images": ["kr-event-1_1.jpg"]
         },
-
         {
             "id": "event",
             "title": "카트라이더",

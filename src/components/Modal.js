@@ -1,24 +1,10 @@
 import React, { memo, useContext } from 'react';
 import { PortfolioContext } from '../context/PortfolioContext';
 
-const Modal = memo(() => {
+const Modal = memo(({ work, prev, next, closeModal }) => {
 
-  const { project, work, img_path, closeModal, openModal }  = useContext(PortfolioContext);
-
+  const { img_path, openModal }  = useContext(PortfolioContext);
   const { title, subtitle, url, mainDev, info, images, pages, date } = work;
-
-  const moveModal = (e) => {
-
-    const length = project.length - 1;
-    let workIdx = project.indexOf(work);
-    
-    if(e.target.classList.contains('prev')){
-      workIdx = workIdx > 0 ?  workIdx - 1 : length;
-    } else {
-      workIdx = workIdx < length ? workIdx + 1 : 0;
-    }
-    openModal(project[workIdx]);
-  }
 
   return (
     <>
@@ -55,8 +41,8 @@ const Modal = memo(() => {
           </div>
           <button type="button" className="close" onClick={closeModal}><span></span><span></span></button>
         </div>
-        <button type="button" className="move prev" onClick={moveModal}><span></span><span></span></button>
-        <button type="button" className="move next" onClick={moveModal}><span></span><span></span></button>
+        <button type="button" className="move prev" onClick={()=> openModal(prev)}><span></span><span></span></button>
+        <button type="button" className="move next" onClick={()=> openModal(next)}><span></span><span></span></button>
       </article>
     </>
   )
