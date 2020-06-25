@@ -431,6 +431,11 @@ footer {
     li {
       position: relative;
       padding-left: 10px;
+      margin-bottom: 2px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &:before {
         position: absolute;
