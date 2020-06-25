@@ -128,10 +128,24 @@
         },
         {
             "id": "event",
+            "title": "카트라이더 러쉬+",
+            "subtitle": "카러플 스타컵",
+            "date": "2020.06",
+            "url": "https://kartrush.nexon.com/event_200617-launching?spot=1",
+            "mainDev": true,
+            "info": ["PC/Mobile 별도 페이지 구성","IE11+, Modern Broswer 지원", "참여도: 100% (HTML/SCSS/ES6+)", "scroll-active.js, parallax.js 라이브러리 제작"],
+            "thumbnail": "krp_200617-1.png",
+            "images": ["krp_200617-1.png", "krp_200617-2.png", "krp_200617-3.png"],
+            "pages": [
+                {"name": "github 소스 보기", "url": "https://github.com/jnooys/works/tree/master/2020/0617_%EC%B9%B4%EB%9F%AC%ED%94%8C%EC%8A%A4%ED%83%80%EC%BB%B5"}
+            ]
+        },
+        {
+            "id": "event",
             "title": "바람의나라",
             "subtitle": "바람 여름 업데이트",
             "date": "2019",
-            "url": "http://baram.nexon.com/E190725/GameseongEvent",
+            "url": "https://baram.nexon.com/E190725/GameseongEvent",
             "mainDev": true,
             "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery/HTML5 Canvas)"],
             "thumbnail": "br-event-3.jpg",
@@ -175,7 +189,7 @@
             "title":"바람의나라",
             "subtitle": "바린이 나르샤",
             "date": "2019",
-            "url": "http://baram.nexon.com/E190502/Event",
+            "url": "https://baram.nexon.com/E190502/Event",
             "mainDev": true,
             "info": ["IE9부터 지원", "참여도: 100% (HTML/CSS/Javascript/jQuery)"],
             "thumbnail": "br-event-2.jpg",
