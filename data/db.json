@@ -10,15 +10,32 @@
 		{
 			"id": 3,
 			"title": "카트라이더 러쉬+",
-			"subtitle": "카러플 스타컵",
-			"date": "2020.06",
-			"url": "https://kartrush.nexon.com/event_200617-launching?spot=1",
+			"subtitle": "슈퍼매치 이벤트",
+			"date": "2020.05",
+			"url": "http://rongchyo.cafe24.com/project/2020/supermatch/kr-launching.html",
 			"mainDev": true,
-			"info": ["참여도: 100% (HTML/SCSS/ES6+/webpack/babel)", "PC/Mobile 별도 페이지 구성","IE11+, Modern Broswer 지원", "scroll-active.js, parallax.js 라이브러리 제작"],
-			"thumbnail": "krp_200617-1.png",
-			"images": ["krp_200617-1.png", "krp_200617-2.png", "krp_200617-3.png"],
+			"info": ["참여도: 100% (HTML/SCSS/ES6+/webpack/babel)", "PC/Mobile 별도 페이지 구성되어 있으며, IE11부터 브라우저 지원", "API 이용하여 투표하기, 사전예약 기능 구현", "scroll-active.js 라이브러리 제작"],
+			"thumbnail": "hsurtrak-event-2.jpg",
+			"images": ["hsurtrak-event-2_1.jpg", "hsurtrak-event-2_2.jpg"],
 			"pages": [
-				{"name": "github 소스 보기", "url": "https://github.com/jnooys/works/tree/master/2020/0617_%EC%B9%B4%EB%9F%AC%ED%94%8C%EC%8A%A4%ED%83%80%EC%BB%B5"}
+				{"name": "모바일 페이지 보기", "url": "http://rongchyo.cafe24.com/project/2020/supermatch/kr-launching-mobile.html"},
+				{"name": "github 소스 보기", "url": "https://github.com/jnooys/works/tree/master/2020/0519_supermatch"}
+			]
+		},
+		{
+			"id": 3,
+			"title": "카트라이더 러쉬+",
+			"subtitle": "글로벌 사전예약",
+			"date": "2020.04",
+			"url": "https://kartrush.nexon.com/kr-pre?spot=1",
+			"mainDev": true,
+			"info": ["참여도: 100% (HTML/SCSS/Javascript/jQuery)", "PC/Mobile 별도 페이지로 구성되어 있으며, IE10부터 지원", "영문/태국/대만/국문 다국어 사이트 제작", "API 이용하여 사전예약 기능 구현"],
+			"thumbnail": "hsurtrak-event-1.jpg",
+			"images": ["hsurtrak-event-1_1.jpg", "hsurtrak-event-1_2.jpg", "hsurtrak-event-1_3.jpg"],
+			"pages": [
+				{"name": "영문", "url": "https://kartrush.nexon.com/kr-pre?spot=1"},
+				{"name": "중문 번체", "url": "https://kartrush.nexon.com/tw-pre?spot=1"},
+				{"name": "태국어", "url": "https://kartrush.nexon.com/th-pre?spot=1"}
 			]
 		},
 		{
