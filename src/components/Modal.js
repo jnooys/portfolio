@@ -1,15 +1,35 @@
-import React, { memo, useContext } from 'react';
-import { PortfolioContext } from '../context/PortfolioContext';
+import React, { useCallback } from 'react';
+import { useStateContext, useReducerContext} from '../context';
+import {openItem, closeModal, closeItem } from '../reducer';
 
-const Modal = memo(({ work, prev, next, closeModal }) => {
+const Modal = () => {
 
-  const { img_path, openModal }  = useContext(PortfolioContext);
-  const { title, subtitle, url, mainDev, info, images, pages, date } = work;
+  const { item, imagePath, sortedProject } = useStateContext();
+  const dispatch = useReducerContext();
+  const { title, subtitle, url, mainDev, info, images, pages, date } = item;
+
+  const onClickClose = useCallback(() => {
+    closeModal();
+    dispatch(closeItem());
+  }, []);
+
+  const onClickMove = useCallback((e) => {
+    const buttonType = e.target.dataset.move;
+    const nowIndex = sortedProject.indexOf(item);
+    const lastIndex = sortedProject.length - 1;
+    let moveIndex;
+    if(buttonType === 'prev') {
+      moveIndex = nowIndex === 0 ? lastIndex : nowIndex - 1;
+    } else if(buttonType === 'next') {
+      moveIndex = nowIndex === lastIndex ? 0 : nowIndex + 1;
+    }
+    dispatch(openItem(sortedProject[moveIndex]));
+  }, [sortedProject, item]);
 
   return (
     <>
       <article id="modal">
-        <span className="dim" onClick={closeModal}></span>
+        <span className="dim" onClick={onClickClose}></span>
         <div className="modal_popup">
           <div>
             <header>
@@ -34,18 +54,18 @@ const Modal = memo(({ work, prev, next, closeModal }) => {
               </ul>
               <ul className="img">
               {
-                images.map((image, index) => <li key={`image${index}`}><span><img src={img_path+image} alt={`${title} ${subtitle}`} /></span></li>)
+                images.map((image, index) => <li key={`image${index}`}><span><img src={imagePath+image} alt={`${title} ${subtitle}`} /></span></li>)
               }
               </ul>
             </section>
           </div>
-          <button type="button" className="close" onClick={closeModal}><span></span><span></span></button>
+          <button type="button" className="close" onClick={onClickClose}><span></span><span></span></button>
         </div>
-        <button type="button" className="move prev" onClick={()=> openModal(prev)}><span></span><span></span></button>
-        <button type="button" className="move next" onClick={()=> openModal(next)}><span></span><span></span></button>
+        <button type="button" className="move prev" data-move="prev" onClick={onClickMove}><span></span><span></span></button>
+        <button type="button" className="move next" data-move="next" onClick={onClickMove}><span></span><span></span></button>
       </article>
     </>
   )
-})
+};
 
 export default Modal;

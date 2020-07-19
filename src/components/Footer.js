@@ -5,7 +5,7 @@ const Footer = memo(() => {
     <>
       <footer>
         <div className="container">
-          <p>&copy; 2020 seoyoon jung All Rights Reserved. </p>
+          <p>&copy; seoyoon jung All Rights Reserved. </p>
         </div>
       </footer>
     </>
