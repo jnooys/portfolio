@@ -1,17 +1,40 @@
-import React, { useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useStateContext, useReducerContext} from '../context';
 import {openItem, closeModal, closeItem } from '../reducer';
+import Skeleton from './Skeleton';
 
 const Modal = () => {
 
   const { item, imagePath, sortedProject } = useStateContext();
   const dispatch = useReducerContext();
+  const [ loading, setLoading ] = useState(true);
   const { title, subtitle, url, mainDev, info, images, pages, date } = item;
+
+  useEffect(() => {
+    setLoading(true);
+    if(!images) return;
+
+    const imagePromise = images.map((v) => new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => {
+        resolve(true);
+      };
+      image.onerror = () => {
+        reject();
+      };
+      image.src = imagePath+v;
+    }));
+
+    Promise.all(imagePromise).then(() => {
+      setLoading(false);
+    });
+    
+  }, [imagePath, images]);
 
   const onClickClose = useCallback(() => {
     closeModal();
     dispatch(closeItem());
-  }, []);
+  }, [dispatch]);
 
   const onClickMove = useCallback((e) => {
     const buttonType = e.target.dataset.move;
@@ -24,7 +47,7 @@ const Modal = () => {
       moveIndex = nowIndex === lastIndex ? 0 : nowIndex + 1;
     }
     dispatch(openItem(sortedProject[moveIndex]));
-  }, [sortedProject, item]);
+  }, [sortedProject, item, dispatch]);
 
   return (
     <>
@@ -54,7 +77,14 @@ const Modal = () => {
               </ul>
               <ul className="img">
               {
-                images.map((image, index) => <li key={`image${index}`}><span><img src={imagePath+image} alt={`${title} ${subtitle}`} /></span></li>)
+                loading ? 
+                <>
+                  <li><Skeleton style={{paddingTop:'120%'}} /></li>
+                  <li><Skeleton style={{paddingTop:'120%'}} /></li>
+                  <li><Skeleton style={{paddingTop:'120%'}} /></li>
+                </>
+                : 
+                images.map((image, index) => <li key={`image${index}`}><span className="screenshot"><img src={imagePath+image} alt={`${title} ${subtitle}`} /></span></li>)                
               }
               </ul>
             </section>

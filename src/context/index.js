@@ -3,6 +3,23 @@ import React, { createContext, useContext } from 'react';
 const DispatchProvider = createContext();
 const StateProvider = createContext();
 
+export const useStateContext = () => {
+  const context = useContext(StateProvider);
+  if(!context) {
+    throw new Error('Cannot find StateProvider');
+  }
+  return context;
+};
+
+export const useReducerContext = () => {
+  const context = useContext(DispatchProvider);
+  if(!context) {
+    throw new Error('Cannot find DispatchProvider');
+  }
+  return context;
+};
+
+
 export default ({ value, children }) => {
 
   return (
@@ -13,19 +30,3 @@ export default ({ value, children }) => {
     </StateProvider.Provider>
   );
 };
-
-export const useStateContext = () => {
-  const context = useContext(StateProvider);
-  if(!context) {
-    throw new Error('Cannot find StateProvider');
-  }
-  return context;
-}
-
-export const useReducerContext = () => {
-  const context = useContext(DispatchProvider);
-  if(!context) {
-    throw new Error('Cannot find DispatchProvider');
-  }
-  return context;
-}

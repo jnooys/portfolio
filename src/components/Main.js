@@ -1,14 +1,12 @@
 import React from 'react';
 import { useStateContext } from '../context';
-import Loading from './Loading';
 import ProjectList from './ProjectList';
 
 const Main = () => {
-  const { sortedProject, sortYear, sortCategory, loading, activeCategory } = useStateContext();
+  const { sortedProject, sortYear, sortCategory, activeCategory } = useStateContext();
   
   return (
     <main>
-      {loading && <Loading/>}
       { 
         activeCategory ?
         sortCategory.filter(v => !activeCategory.id ? v.id : v.id === activeCategory.id).map((category) => 

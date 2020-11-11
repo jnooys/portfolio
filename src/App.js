@@ -1,11 +1,11 @@
 import React, { useEffect, useReducer } from 'react';
-import './scss/App.scss';
 import { initialState, reducer, loadData } from './reducer';
 import PortfolioProvider from './context';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
+import './scss/App.scss';
 
 const App = () => {
 

@@ -1,0 +1,8 @@
+.skeleton {
+  display: block;
+  background: #eee;
+
+  &.circle {
+    border-radius: 100%;
+  }
+}
