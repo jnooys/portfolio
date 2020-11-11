@@ -14,13 +14,13 @@ const Header = () => {
       dispatch(toggleCategory(false));
     }
     setOpenCategory(!openCategory);
-  }, [openCategory]);
+  }, [dispatch, openCategory, originProject]);
  
   const onClickCategory = useCallback((id, e) => {
     e.preventDefault();
     let category;
     let project;
-    
+    console.log(activeCategory);
     if(activeCategory.id === id) {
       category = false;
       project = [...originProject];
@@ -33,15 +33,15 @@ const Header = () => {
     dispatch(toggleCategory(category));
 
     window.scrollTo(0, 0);
-  }, [activeCategory, sortCategory]);
+  }, [activeCategory, dispatch, originProject, sortCategory]);
 
   return (
     <>
-      <header id="header">
+      <header id="header" className={openCategory ? 'open' : ''}>
         <div className="container">
           <h1><a href="/portfolio">seoyoon jung</a></h1>
           <div className="category_wrap">
-            <h2 className={activeCategory && 'open'}>
+            <h2>
               <a href="#n" onClick={onToggleCateogry}>
                 <svg width="200" height="200" viewBox="0 0 200 200">
                   <g>

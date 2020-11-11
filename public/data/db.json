@@ -10,6 +10,20 @@
 		{
 			"id": 3,
 			"title": "카트라이더 러쉬+",
+			"subtitle": "쏘나타 N 라인컵",
+			"date": "2020.09",
+			"url": "http://rongchyo.cafe24.com/project/2020/sonata/event02.html",
+			"mainDev": true,
+			"info": ["참여도: 100% (HTML/SCSS/ES6+/webpack/babel)", "반응형 페이지", "IE11, 모던 브라우저 지원", "API 이용하여 참가신청 기능 구현"],
+			"thumbnail": "hsurtrak-event-3.jpg",
+			"images": ["hsurtrak-event-3_1.jpg", "hsurtrak-event-3_2.jpg"],
+			"pages": [
+				{"name": "github 소스 보기", "url": "https://github.com/jnooys/works/tree/master/2020/0928_SONATA"}
+			]
+		},
+		{
+			"id": 3,
+			"title": "카트라이더 러쉬+",
 			"subtitle": "슈퍼매치 이벤트",
 			"date": "2020.05",
 			"url": "http://rongchyo.cafe24.com/project/2020/supermatch/kr-launching.html",
