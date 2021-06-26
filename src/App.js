@@ -7,20 +7,19 @@ import Footer from './components/Footer';
 import Modal from './components/Modal';
 import './scss/App.scss';
 
-const App = () => {
-
-  const [ state, dispatch ] = useReducer(reducer, initialState);
+function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
   const { item } = state;
 
   useEffect(() => {
-    (async function(){
+    (async function () {
       const fetchApiData = async (page) => {
         const path = '/portfolio/data/db.json';
         const res = await fetch(path);
         const data = await res.json();
         return data[page];
-      }
-      
+      };
+
       const originProject = await fetchApiData('project');
       const sortCategory = await fetchApiData('category');
       const sortYear = originProject.reduce((a, v) => {
@@ -30,16 +29,16 @@ const App = () => {
         }
         return a;
       }, []);
-      dispatch(loadData({originProject, sortCategory, sortYear, loading: false }));
+      dispatch(loadData({ originProject, sortCategory, sortYear, loading: false }));
     })();
   }, []);
 
   return (
-    <PortfolioProvider value={{state, dispatch}}>
+    <PortfolioProvider value={{ state, dispatch }}>
       <Header />
       <Main />
       <Footer />
-      { item && <Modal /> }
+      {item && <Modal />}
     </PortfolioProvider>
   );
 }
